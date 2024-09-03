@@ -16,7 +16,7 @@
 title: Terraformadores de Venus
 description: > # this means to ignore newlines until "baseurl:"
   Material theme based on <a href="http://materializecss.com">Materialize.css</a> for jekyll sites
-baseurl: "/CDS"
+baseurl: "/Terraformadores"
 url: "https://profesorjavi.github.io/Terraformadores/"
 permalink: /:day/:month/:year/:title
 repository: profesorjavi/Terraformadores
