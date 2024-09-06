@@ -33,6 +33,5 @@ En este trabajo trabajaréis en equipo y de manera colaborativa bajo, el equipo 
 Aquí podéis conocer como nos infraestructuramos
  
    
-
-(./img/Terraform.png)
+![Descripción de la infraestructura de la empresa](./img/Terraform.png)
 
