@@ -24,7 +24,7 @@
    - Conoceros a vosotr@s los futuros x-men y x-women
      
 3. **Configuración Inicial:**
-   - Empezaréis a crear la infraestreuctura de terraformadoes de Venus.
+   - Empezaréis a crear la infraestreuctura de terraformadoes de Venus utilizando el increible software GNS3
 
 4. **Logo para la empresa:**
    - Está es una empresa nueva y necesita de vuestra creatividad para asignarle un logo. Propondéis un logo y realizaremos un concurso para su elección.
