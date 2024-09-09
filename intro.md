@@ -14,8 +14,8 @@ Actualmente trabajamos un equipo multidisciplinar formado por:
 1. Charles Xavier (Profesor X): Serguro y con altas capaciades.
 2. Jean Grey (Marvel Girl): Telepática y telequinética además de distribuir BBDD.
 3. Beast (Hank McCoy): Superfuerza, agilidad y facilidad para desplegar todo tipo de artefactos.
-4. Iceman (Bobby Drake): Capacidad para generar y manipular hielo, además de distribir información y bautizar todo tipo de dispositivo.
-5. Angel (Warren Worthington III): Alas de plumas que le permiten volar. Atiende todos los ámbitos resuleve todos los problemas, oráculo para los xmen
+4. Angel (Warren Worthington III): Alas de plumas que le permiten volar. Atiende todos los ámbitos resuleve todos los problemas, oráculo para los xmen
+5. Iceman (Bobby Drake): Capacidad para generar y manipular hielo, además de distribir información y bautizar todo tipo de dispositivo.
  
 
 En esta empresa vais a tener la oportunidad de trabajar directamente con Terraformadores de Venus en el desarrollo de propuestas y soluciones innovadoras que ayuden a la empresa a mejorar sus servicios y expandir su presencia en el mercado. 
