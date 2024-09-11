@@ -14,4 +14,11 @@ Con determinación y entusiasmo,
 **Hank McCoy (Beast)**
 
 
-![alt text](beast.jpg)
+<img src="./img/beast.jpg" alt="Beast" width="100%"/>
+<br>
+<br>
+
+---
+## Lista de tareas ordenadas por temas
+### Markdown
+1. [Tarea Introducción a Markdown](./Markdown/Tarea1.md)
