@@ -14,7 +14,7 @@ Con determinación y entusiasmo,
 **Hank McCoy (Beast)**
 
 
-<img src="./img/beast.jpg" alt="Beast" width="100%"/>
+<img src="./img/beast.jpg" alt="Beast" width="70%"/>
 <br>
 <br>
 
