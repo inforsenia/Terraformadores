@@ -1,8 +1,10 @@
-# Primer Contacto con Markdown: ¡Tu Primer Paso en la Aventura con Beast!
+## Primer Contacto con Markdown: ¡Tu Primer Paso en la Aventura con Beast!
 
 Bienvenidos al primero de muchos desafíos que enfrentaréis junto a mí, Beast, en este emocionante viaje en Terraformadores de Venus. Para comenzar a explorar las tecnologías que vamos a dominar, quiero que os familiaricéis con una herramienta esencial en nuestro mundo: Markdown. Este lenguaje de marcas es fundamental para generar documentación clara y efectiva, y se utiliza a diario en entornos de desarrollo y operaciones.
 
-## Ejercicio: Documentación sobre el Protocolo HTTP
+<center><img src="../img/Markdown.png" alt="Beast" width="60%"/></center>
+
+### Ejercicio: Documentación sobre el Protocolo HTTP
 
 Vuestra tarea será crear un documento elaborado en **Markdown** que cubra el **protocolo HTTP**. Este documento deberá incluir información sobre qué es HTTP, cómo funciona, su origen, detalles de códigos de estado, su funcionamiento general... A continuación, deberéis presentar vuestro trabajo al equipo, ya sea con soporte de presentación o no.
 
