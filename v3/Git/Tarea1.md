@@ -1,10 +1,11 @@
 ## Segundo Ejercicio: Domina Git y Conéctate al Repositorio de Terraformadores de Venus
-
+<p style="text-align:justify">
 ¡Bienvenidos de nuevo a vuestra segunda misión en **Terraformadores de Venus**! En este ejercicio, continuaremos nuestra aventura tecnológica aprendiendo a utilizar **Git** para la gestión y control de versiones, una habilidad esencial en cualquier entorno de desarrollo. Además, aprovecharemos para subir el documento en Markdown que creasteis en el primer ejercicio.
 
 ### Ejercicio: Creación y Gestión de Repositorios en GitLab utilizando HTTPS
 
-1. **Crea una cuenta en GitLab (si no la tienes ya).** Este es tu primer paso para conectarte y colaborar en proyectos con el equipo.
+1. 
+   **Crea una cuenta en GitLab (si no la tienes ya).** Este es tu primer paso para conectarte y colaborar en proyectos con el equipo.
 
 2. **Acceso a los repositorios remotos:** Vamos a utilizar HTTPS para conectarnos a los repositorios de GitLab. No es necesario configurar claves SSH para este ejercicio.
 
@@ -55,7 +56,7 @@
    git push
    ```
 
-9. **Realiza modificaciones adicionales y gestiona los cambios:**
+9.  **Realiza modificaciones adicionales y gestiona los cambios:**
    - Modifica el archivo Markdown (`documento_http.md`) si es necesario y realiza un nuevo commit con la opción `-a` para incluir todos los cambios:
 
      ```bash
@@ -76,13 +77,9 @@
     git status
     ```
 
-**¿Qué tienes que entregar?**
 
+**¿Qué tienes que entregar?**
 - El contenido del fichero `.git/config` para demostrar que has clonado el repositorio usando la URL HTTPS.
 - La salida del comando `git log` para ver los commits que has realizado (debe aparecer como autor tu nombre completo).
 - **Memoria del proceso:** Documenta todo el proceso seguido con capturas de pantalla en otro fichero Markdown (por ejemplo, `memoria_proceso.md`). Este archivo también debe ser subido al mismo repositorio.EN esta memoria debe aparecer información y capturas de pantalla que muestren cómo creaste un nuevo repositorio llamado `prueba2_tu_nombre`, primero como repositorio local (usando `git init`) y luego sincronizándolo para crear el repositorio remoto en GitLab. Comenta los pasos realizados y proporciona alguna prueba del proceso finalizado.
 
-
----
-
-¿Hay algo más que te gustaría ajustar o añadir?
