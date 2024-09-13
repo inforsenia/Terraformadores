@@ -1,5 +1,4 @@
 ## Segundo Ejercicio: Domina Git y Conéctate al Repositorio de Terraformadores de Venus
-<p style="text-align:justify">
 ¡Bienvenidos de nuevo a vuestra segunda misión en **Terraformadores de Venus**! En este ejercicio, continuaremos nuestra aventura tecnológica aprendiendo a utilizar **Git** para la gestión y control de versiones, una habilidad esencial en cualquier entorno de desarrollo. Además, aprovecharemos para subir el documento en Markdown que creasteis en el primer ejercicio.
 
 ### Ejercicio: Creación y Gestión de Repositorios en GitLab utilizando HTTPS
