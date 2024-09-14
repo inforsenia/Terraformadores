@@ -20,5 +20,5 @@ En esta tarea aprenderemos lo que es un keylogger, cómo actúa y pensaremos có
 
 Uno de los aspectos más importantes en cuanto a la seguridad de nuestros datos será garantizar que podemos recuperarlos en caso de modificación no deseada y/o eliminación por parte de un atacante o por algún tipo de error.
 
-Tener los datos replicados en una ubicación diferente, así como la utilización de un incremental de cambios no servirá ayudará en esta tarea.
+Tener los datos replicados en una ubicación diferente, así como la utilización de un incremental de cambios nos ayudará en esta tarea.
 
