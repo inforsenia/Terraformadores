@@ -14,7 +14,7 @@ La instrucciones y entrega de todas las tareas las podréis realizar a través d
 
 ### Tarea 1 - Instalación de un Keylogger
 
-En esta tarea aprenderemos lo que es un keylogger, cómo actúa y pensaremos cómo podemos detectar si alguien ha instalado uno el nuestra máquina.
+En esta tarea aprenderemos lo que es un keylogger, cómo actúa y pensaremos cómo podemos detectar si alguien ha instalado uno en nuestra máquina.
 
 ### Tarea 2 - Realización de copias de seguridad con rsync
 
