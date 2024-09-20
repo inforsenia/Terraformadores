@@ -7,7 +7,7 @@ Aunque Jean Grey tiene poderes de telepática y telequinética, no es capaz de t
 
 ### Acometido de la tarea
 Próximamente se va a conectar nuestra Base de Datos Distribuida a las galaxias vecinas, por lo que necesitamos tener todas las comunicaciones correctamente. Necesitaremos:
-- Tener una base de datos documental que nos diga con qué planeta debo contactar en caso de que la comunicación del planeta en el que vivo, tiene interferencias por *radiación solar* o *distorsión de señales* por lluvia de meteoritos.
+- Tener una base de datos documental, que nos diga con qué planeta debo contactar en caso de que la comunicación del planeta en el que vivo, tenga interferencias por *radiación solar* o *distorsión de señales* por lluvia de meteoritos.
 - Comunicación plena con cualquier planeta de la Vía Lactea, a través de la Base de Datos Distribuida.
 - Automatización de las comunicaciones.
 
