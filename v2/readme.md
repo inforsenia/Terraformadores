@@ -16,4 +16,4 @@ El equipo de trabajo puede contactar con Jean Grey por telepatía, de lunes a vi
 Un saludo
     Jean Grey.
 
-    ![Poderes de Jean Gray](Jean_Gray.jpg)
+    ![Poderes de Jean Gray](./Jean_Gray.png)
