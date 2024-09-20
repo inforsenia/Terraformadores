@@ -1,4 +1,4 @@
-## ASGBD - Jean Grey llamando a la Tierra
+## ASGBD - Jean  Grey llamando a la Tierra
 ### Comunicación con el resto de planetas del sistema solar
 Bienvenidos al equipo de trabajo de telecomunicaciones entre los planetas habitados de la **Vía Lactea**.
 Nuestra tarea es poder obtener información económica de los planetas que conforman la Vía Lactea, para ello tenemos una Base de Datos Distribuida, en la que cada planeta tiene una super base de datos, que replicará su información en los planetas habitados vecinos. La base de datos contiene información económica de sus principales países.
