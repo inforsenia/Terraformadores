@@ -55,5 +55,5 @@ Para garantizar que cada usuario solamente podrá acceder a los objetos para los
 - Crear sinónimos de tablas y vistas.
 - Crear vistas personalizadas para cada tipo de usuario.
 
-* [Subir](#principio)
+[Subir](#principio)
 
