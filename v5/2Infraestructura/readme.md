@@ -20,5 +20,8 @@
 
  <img src="./img/Terraform.png" alt="infraestructura" width="100%" height="100%"> 
 
-El primer paso será configurar el servidor lobezno con un ubuntu server y el equipo mutante 1, como un terminal listo (un docker con vuestras utilidades de red favoritas) que recibirá una IP adecuada a través del DHCP del router.
-Ambos equipos, lobezno y mutante podrán navegar por internet. Y el servidor lobezno sera accesible por ssh desde el equipo mutante1
+### Misión 1: Configuración Inicial
+
+Bienvenidos, terraformadores. En esta primera misión, vuestro objetivo será configurar el servidor Lobezno con un sistema operativo Ubuntu Server y preparar el equipo Mutante 1 como un terminal listo para la acción. Este terminal será un contenedor Docker con vuestras utilidades de red favoritas, y recibirá una IP adecuada a través del DHCP del router.
+
+Ambos equipos, Lobezno y Mutante 1, deberán tener acceso a internet. Además, el servidor Lobezno será accesible por SSH desde el equipo Mutante 1.
