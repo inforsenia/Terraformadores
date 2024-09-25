@@ -22,3 +22,7 @@ Uno de los aspectos más importantes en cuanto a la seguridad de nuestros datos 
 
 Tener los datos replicados en una ubicación diferente, así como la utilización de un incremental de cambios nos ayudará en esta tarea.
 
+### Tarea 3 - John the Ripper
+
+En esta tarea aprenderemos a valorar el uso de contraseñas seguras.
+
