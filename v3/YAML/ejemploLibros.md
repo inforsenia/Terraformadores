@@ -68,7 +68,7 @@ Podríamos hacer un programa como este para ver como representa internamente la 
 ```python
 import yaml   
 with open("books.yaml") as fichero:
-    doc=yaml.load(fichero)
+    doc=yaml.safe_load(fichero)
 ```
 
 ## Obteniendo información
