@@ -69,23 +69,29 @@ Podríamos hacer un programa como este para ver como representa internamente la 
 import yaml   
 with open("books.yaml") as fichero:
     doc=yaml.load(fichero)
+```
 
 ## Obteniendo información
+```python
 print(doc)
+```
 
 ### Cantidad de libros
+```python
 numLibros=(len(doc["bookstore"]["book"]))
 print("Número de libros en la biblioteca: ",numLibros)
-
+```
 ### Títulos de los libros
-
+```python
 for libro in doc["bookstore"]["book"]:
     print(libro["title"]["text"]) 
-
+```
 ### Autores de los libros
+```python
 for libro in doc["bookstore"]["book"]:
     if isinstance(libro["author"],list):
         for autor in libro["author"]:
             print(autor)
     else:
         print(libro["author"])
+```
