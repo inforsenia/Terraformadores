@@ -24,4 +24,4 @@
 
 Bienvenidos, terraformadores. En esta primera misión, vuestro objetivo será configurar el servidor Lobezno con un sistema operativo Ubuntu Server y preparar el equipo Mutante 1 como un terminal listo para la acción. Este terminal será un contenedor Docker con vuestras utilidades de red favoritas, y recibirá una IP adecuada a través del DHCP del router.
 
-Ambos equipos, Lobezno y Mutante 1, deberán tener acceso a internet. Además, el servidor Lobezno será accesible por **SSH** desde el equipo Mutante 1.
+Ambos equipos, Lobezno y Mutante 1, deberán tener acceso a internet. Además, el servidor Lobezno será accesible por **SSH** desde el equipo Mutante 1. Por favor, configurar el servidor SSH para que como máximo acepte simultaneamente dos conexiones SSH. Demostrarme con un documento que lo habéis realizado.
