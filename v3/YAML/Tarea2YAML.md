@@ -38,3 +38,48 @@ Crear un programa en Python que devuelva lo siguiente
 2. **Fichero Markdown:** Un documento Markdown con una **breve** explicación del proceso que seguiste para analizar el playbook. Incluye capturas de pantalla de los resultados de la ejecución del programa, demostrando que tu código funciona correctamente.
 
 Con este ejercicio completarás tu inmersión en el uso práctico de **YAML** dentro de **Terraformadores de Venus**, aplicando el conocimiento tanto en la configuración de sistemas como en la automatización de tareas críticas para la infraestructura. Al mismo tiempo, demostrarás tu dominio de Python.
+
+
+### Codigo Ansible.yaml
+```yaml
+---
+hosts: servidor_mysql
+sudo: yes
+vars:
+  mysql_root_db_pass: 'asdasd'
+tasks:
+  - name: install mysql
+    apt: name={{ item }} state=latest
+    with_items:
+      - mysql-server
+      - python-mysqldb 
+
+  - name: Ensure mysql binds to internal interface
+    template: >
+      src=templates/my.cnf 
+      dest=/etc/mysql/my.cnf 
+      owner=root 
+      group=root 
+      mode=0644
+    notify: restart mysql
+  
+  - name: update mysql root password for locahost accounts
+    mysql_user: >
+      name=root
+      host=localhost
+      password={{ mysql_root_db_pass }}
+  - name: copy .my.cnf file with root password credentials
+    template: src=templates/.my.cnf.j2 dest=~/.my.cnf owner=root mode=0600
+
+
+  - name: update mysql root password for all root accounts
+    mysql_user: name=root host={{ item }} password={{ mysql_root_db_pass }}
+    with_items:
+      - "{{ ansible_hostname }}"
+      - localhost
+
+
+handlers:
+  - name: restart mysql
+    service: name=mysql state=restarted
+```
