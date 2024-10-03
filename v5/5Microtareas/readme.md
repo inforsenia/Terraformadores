@@ -7,4 +7,4 @@ En **Terraformadores de Venus**, admemás de grandes proyectos también necesita
    - En esta microtarea se realizará un artefacto para explicar a cualquier empleado como funcionan las coneciones en un arquitectura cliente servidor desde el punto de vista de las conexiones.
 
 1. **[Asistencia remota](./MT2/mt2.md)**
-   - En esta microtarea se configurarán los equipos de los empleados de Fuerzax y excalibur para que puedan ser accesibles para que desde mutantes podamos accder y prestar asistencia accediendo a sus escritorios.
+   - En esta microtarea se configurarán los equipos de los empleados de Fuerzax y excalibur para que puedan ser accesibles desde mutantes. De esta manera, podremos prestar asistencia accediendo a sus escritorios.
