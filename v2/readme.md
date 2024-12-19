@@ -87,9 +87,9 @@ Se requiere crear un procedimiento que reciba el nombre de una población y que 
 Utilizando parámetros de cursores y tratando las excepciones preestablecidas.
 Por ejemplo: 
 
-|Población |Número de usuario|Salario        |
+|Población |Número de usuario|Saldo        |
 |----------|-----------------|---------------|
-|Keocs     |234              |875412598423   |
+|Keocs     |234              |875412  |
 
 #### Tarea 4:
 Se requiere crear una función llamada comprueba_saldo, que recibirá el valor de todos los campos para realizar una extracción monetaria. Creando una excepción propia para que, en caso de que el saldo quede negativo cuando se extraiga la cantidad solicitada, muestre un mensaje en la parte de excepciones diciendo "Operación no permitida. Saldo negativo". Si ha ido todo bien la función devolverá True y en caso contrario devolverá False. 
