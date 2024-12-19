@@ -7,7 +7,7 @@ Nuestra tarea es poder obtener información económica de los planetas que confo
 
 Aunque Jean Grey tiene poderes de telepática y telequinética, no es capaz de trasladar toda la información de la base de datos a los planetas vecinos, por esta razón necesita vuestra ayuda.
 
-### Acometido de la tarea
+### Acometido de las tareas
 Próximamente se va a conectar nuestra Base de Datos Distribuida a las galaxias vecinas, por lo que necesitamos tener todas las comunicaciones correctamente. Necesitaremos:
 - Tener una base de datos documental, que nos diga con qué planeta debo contactar en caso de que la comunicación del planeta en el que vivo, tenga interferencias por *radiación solar* o *distorsión de señales* por lluvia de meteoritos.
 - Comunicación plena con cualquier planeta de la Vía Lactea, a través de la Base de Datos Distribuida.
