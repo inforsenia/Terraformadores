@@ -4,7 +4,6 @@ git add .
 git commit -m "$1" 
 git push origin develop
 git checkout main
-git pull origin main
 git merge develop
 git push origin main
 git checkout develop
