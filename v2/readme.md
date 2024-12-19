@@ -83,7 +83,7 @@ Se requiere mostrar los movimientos en la cuenta de los usuarios, según los par
 Utilizando parámetros de cursores y tratando las excepciones preestablecidas.
 
 #### Tarea 3:
-Se requiere crear un procedimiento que reciba el nombre de una población y que imprima el salario de todos los usuarios de esa ciudad y el número de usuarios. 
+Se requiere crear un procedimiento que reciba el nombre de una ciudad y que imprima el salario de todos los usuarios de esa ciudad y el número de usuarios. 
 Utilizando parámetros de cursores y tratando las excepciones preestablecidas.
 Por ejemplo: 
 
