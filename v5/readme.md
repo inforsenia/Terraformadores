@@ -6,5 +6,6 @@
 1. [Iceman](./1Intro/)
 1. [Infraestructura](./2Infraestructura/)
 1. [Docker](./3Docker/)
-1. [Primeros Servicios. DHCP, DNS](./4Retos1EVAL/)
-1. [Microtareas](./5Microtareas/)
+1. [Servicios. DHCP, DNS](./4Retos1EVAL/)
+1. [Servicios. WEB, FTP, EMAIL, Streaming](./5Retos2EVAL/)
+1. [Microtareas](./6Microtareas/)
