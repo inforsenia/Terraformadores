@@ -11,10 +11,10 @@ A continuación, se detallan las configuraciones requeridas:
 ### Requerimientos
 
 1. **Configuración de Virtual Hosts en Apache:**
-   - Configurar un host virtual en Apache que responda con la web ubicada en **/srv/www/davidbowie/** cuando se reciba una petición a **http://www.davidbowie.edu/**.
+   - Configurar un host virtual en Apache que responda con la web ubicada en **/srv/www/bowie/davidbowie/** cuando se reciba una petición a **http://www.davidbowie.edu/**.
         - Está es la web que ha hecho el diseñador. [davidbowie.edu](vh1_24_25.zip)
 
-   - Configurar un nuevo host virtual en Apache que responda con la web ubicada en **/srv/www/starman/** cuando se reciba una petición a **http://www.starman.edu/**.
+   - Configurar un nuevo host virtual en Apache que responda con la web ubicada en **/srv/www/bowie/starman/** cuando se reciba una petición a **http://www.starman.edu/**.
          - Está es la web que ha hecho el diseñador. [starman.edu](vh2_24_25.zip)
 
 
@@ -40,7 +40,7 @@ A continuación, se detallan las configuraciones requeridas:
 
 5. **Configuración del servidor Nginx:**
    - Configurar un servidor **nginx** separado, que escuche en el puerto **8080**.
-   - Este servidor responderá con la web ubicada en **/srv/www/bowiefans/** cuando se reciba una petición a **http://bowiefans.org:8080**.
+   - Este servidor responderá con la web ubicada en **/srv/www/bowie/bowiefans/** cuando se reciba una petición a **http://bowiefans.org:8080**.
 
 ### Batería de pruebas
 Para verificar que la configuración se ha realizado correctamente, se deben probar los siguientes accesos:
