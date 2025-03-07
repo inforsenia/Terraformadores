@@ -42,7 +42,7 @@ A continuación, se detallan las configuraciones requeridas:
    - Configurar un servidor **nginx** separado, que escuche en el puerto **8080**.
    - Este servidor responderá con la web ubicada en **/srv/www/bowie/bowiefans/** cuando se reciba una petición a **http://bowiefans.org:8080**.
 
-### Batería de pruebas
+### [Batería](bateria.html) de pruebas
 Para verificar que la configuración se ha realizado correctamente, se deben probar los siguientes accesos:
 - **http://www.davidbowie.edu/**
 - **http://www.davidbowie.edu/~ziggy**
