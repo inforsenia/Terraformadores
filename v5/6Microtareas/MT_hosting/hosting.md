@@ -4,7 +4,7 @@ La asociación de fans de David Bowie nos ha solicitado ayuda para configurar su
 
 Todos los sitios web deben alojarse en la carpeta **/srv/www/bowie/**, con subdirectorios específicos para cada dominio. Por ejemplo, **/srv/www/bowie/davidbowie/** para www.davidbowie.edu, **/srv/www/bowie/starman/** para www.starman.edu, etc.
 
-Atentos por que el informático de la asociación es muy exigente con la configuración y ha solicitado que la web principal de la asociación esté en un servidor **nginx** separado, funcionando en el puerto **8080**. El resto de sitios web se alojarán en **Apache**. 
+Atentos por que el informático de la asociación es muy exigente con la configuración y ha solicitado que la web principal de la asociación **bowiefans.org** esté en un servidor **nginx** separado, funcionando en el puerto **8080**. El resto de sitios web se alojarán en **Apache**. 
 La asociación quiere que sus usuarios puedan publicar páginas web propias pero no quiere pagarles un dominio propio, así que, utilizarán el sitio **www.davidbowie.edu**
 A continuación, se detallan las configuraciones requeridas:
 
