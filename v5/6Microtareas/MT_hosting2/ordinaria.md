@@ -55,7 +55,7 @@ La asociación ha proporcionado los siguientes requerimientos:
 
 #### 4. **Configuración del servidor Nginx:**
 
-- Configurar un servidor Nginx separado, que escuche en el puerto 8080.
+- Configurar un servidor Nginx separado, que escuche en el puerto 8090.
 - Este servidor responderá con la web ubicada en `/srv/www/ecotravel/` cuando se reciba una petición a `http://ecotravel.org:8090`.
 
 ---
