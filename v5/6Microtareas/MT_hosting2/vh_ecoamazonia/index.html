@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAmazonia - Turismo Ecológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenidos a EcoAmazonia</h1>
+            <p>Explora la belleza de la Amazonía con nosotros</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                EcoAmazonia es una organización dedicada a promover el turismo ecológico en la región amazónica. 
+                Nuestro objetivo es ofrecer experiencias únicas y sostenibles, respetando la biodiversidad y las 
+                comunidades locales.
+            </p>
+            <img src="images/amazonia.jpg" alt="Amazonía">
+        </div>
+    </section>
+
+    <section id="tours">
+        <div class="container">
+            <h2>Nuestros Tours</h2>
+            <p>
+                Ofrecemos una variedad de tours ecológicos, incluyendo:
+            </p>
+            <ul>
+                <li>Excursiones por la selva</li>
+                <li>Avistamiento de aves</li>
+                <li>Paseos en canoa por el río Amazonas</li>
+                <li>Visitas a comunidades indígenas</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>
+                ¡Contáctanos para más información o reservar tu tour!
+            </p>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 EcoAmazonia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
