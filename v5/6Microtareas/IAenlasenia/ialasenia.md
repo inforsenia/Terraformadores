@@ -1,13 +1,13 @@
 ## **IA en la sénia**
 
 ### 🔴 **Tenemos un problema**  
-El instituto decide utilizar una plataforma de IA basada en la nube (Deepseek, chatgpt, etc..), por ejemplo, para analizar el rendimiento académico de los alumnos y ofrecer recomendaciones personalizadas. Para ello, sube a esta plataforma datos sensibles de los estudiantes, como:
+El instituto ha decidido utilizar una plataforma de IA basada en la nube (Deepseek, chatgpt, etc..), por ejemplo, para analizar el rendimiento académico de los alumnos y ofrecer recomendaciones personalizadas. Para ello, sube a estas plataformas datos sensibles de los estudiantes, como:
 
 - **Expedientes académicos** (calificaciones, asistencia, informes de conducta).  
 - **Datos personales** (nombre, DNI, dirección, etc.).  
 - **Información de necesidades educativas especiales**.  
 
-Si esta plataforma pertenece a una empresa con servidores ubicados fuera de la Unión Europea **y no cuenta con las garantías adecuadas de protección de datos exigidas por el RGPD**, se estarían violando varias disposiciones de la **LOPDGDD**, como:
+Estas plataformas pertenecen a una empresas con servidores ubicados fuera de la Unión Europea **y no cuenta con las garantías adecuadas de protección de datos exigidas por el RGPD**, se estarían violando varias disposiciones de la **LOPDGDD**, como:
 
 1. **Transferencia internacional de datos sin base legal**  
    - El instituto estaría enviando datos de alumnos a un país que no garantiza el mismo nivel de protección que la UE sin contar con cláusulas contractuales adecuadas o la autorización expresa de los afectados.
@@ -47,8 +47,7 @@ Ejemplo:
 
 ### 🔹 **3. Implementar una infraestructura segura (IA local en servidores propios o europeos)**  
 Para evitar la transferencia de datos a terceros no autorizados, el instituto debe:  
-✅ Usar **servidores locales** dentro del instituto o en una infraestructura segura dentro de la UE.  
-✅ Si se usa la nube, elegir un proveedor con **servidores en la UE** que cumpla con el **RGPD**.  
+✅ Usar **servidores locales** dentro del instituto.  
 ✅ Asegurar que los datos no sean accesibles fuera del entorno educativo autorizado.  
 
 Ejemplo:  
@@ -96,3 +95,9 @@ Los alumnos (o sus tutores) tienen derecho a:
 💡 **Recomendación**: Crear un formulario o correo específico para atender estas solicitudes (ejemplo: privacidad@ieslasenia.edu).  
 
 ---
+
+
+
+## A trabajar!
+
+### **[Desarrollo del proyecto](desarrollo.md)**
