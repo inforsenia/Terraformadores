@@ -18,14 +18,10 @@ Si esta plataforma pertenece a una empresa con servidores ubicados fuera de la U
 3. **Pérdida de control sobre los datos**  
    - Al depender de una plataforma externa, el instituto podría perder el control sobre cómo se procesan y almacenan los datos, corriendo el riesgo de que sean utilizados con fines comerciales o sin autorización.
 
-### ✅ **Solución correcta**  
-Para cumplir con la normativa, el IES La Sénia debería optar por una **IA local**, alojada en sus propios servidores o en una infraestructura que garantice que los datos no salen del Espacio Económico Europeo (EEE). Además, debería informar claramente a los alumnos y familias sobre el uso de la IA, asegurando que el tratamiento de los datos se realice conforme a la legislación vigente.
+### ✅ **Solución correcta para cumplir la LOPDGDD y el RGPD**  
 
 Para que el **IES La Sénia** cumpla con la **LOPDGDD** y el **RGPD** al utilizar una **IA para procesar datos de alumnos**, debe seguir estos pasos:  
-
----
-
-## ✅ **Solución correcta para cumplir la LOPDGDD y el RGPD**  
+  
 
 ### 🔹 **1. Definir la base legal para el tratamiento de datos**  
 Antes de implementar la IA, el instituto debe justificar en qué base legal se apoya el tratamiento de datos personales. Según el **RGPD**, las bases legales pueden ser:  
