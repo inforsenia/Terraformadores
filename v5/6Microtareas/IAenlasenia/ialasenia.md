@@ -85,18 +85,8 @@ Ejemplo:
 
 ---
 
-### 🔹 **6. Firmar acuerdos de confidencialidad y contratos con proveedores**  
-Si la IA usa servicios de terceros, el instituto debe firmar contratos de tratamiento de datos con:  
-✅ Empresas de tecnología (si proveen soporte o infraestructura).  
-✅ Profesores y personal con acceso a los datos, asegurando que mantendrán la confidencialidad.  
 
-Ejemplo:  
-🚫 **Incorrecto** → Usar una plataforma de IA sin contrato específico sobre protección de datos.  
-✅ **Correcto** → Firmar un acuerdo con la empresa proveedora donde se especifique el cumplimiento del RGPD.  
-
----
-
-### 🔹 **7. Permitir el ejercicio de derechos de los alumnos**  
+### 🔹 **6. Permitir el ejercicio de derechos de los alumnos**  
 Los alumnos (o sus tutores) tienen derecho a:  
 ✅ **Acceder** a sus datos.  
 ✅ **Rectificar** datos incorrectos.  
