@@ -12,3 +12,5 @@ En **Terraformadores de Venus**, admemás de grandes proyectos también necesita
 1. **[Hosting en local](MT_hosting/hosting.md)**
 
 1. **[Hosting en local](./MT_hosting2/ordinaria.md)**
+
+1. **[Proyecto Alex](IAenlasenia/ialasenia.md)**
