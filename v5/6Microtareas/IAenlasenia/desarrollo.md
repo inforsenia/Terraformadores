@@ -8,6 +8,8 @@
     4.1  Investigar como Proxmox puede ayudar a alcanzar el objetivo.
 
     4.2  Configuración de proxmox
+        Configurar una MV para el propósito
+        Establecer una conexión segura por ssh con clave privada para el usuario admin
 
     4.3  Ollama
     
