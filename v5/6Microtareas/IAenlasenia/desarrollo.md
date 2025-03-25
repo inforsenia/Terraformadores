@@ -9,7 +9,7 @@
 
     4.2  Configuración de proxmox
         Configurar una MV para el propósito, configurar IP estática y usuario *admin*
-        Establecer una conexión segura por ssh con clave privada para el usuario *admin*
+        Establecer una conexión segura por ssh con clave privada para el usuario *admin*. El usuario *admin* solo podrá conectarse con clave privada.
 
     4.3  Ollama
     
