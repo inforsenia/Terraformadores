@@ -12,9 +12,13 @@
         Establecer una conexión segura por ssh con clave privada para el usuario *admin*. El usuario *admin* solo podrá conectarse con clave privada.
 
     4.3  Trabajar en escenario de producción
+
 * Instalar un escenario de ollama + webui y probar Deepseek. Entender como funciona.
+
 * Instalar la misma configuración en local. Y relaizar pruebas.
+
 * Realizar los contenederes personalizados para IAlasenIA y publicarlos en dockerhub.
+
 
     4.4 Trabajar en escenario de desarrollo.
     
