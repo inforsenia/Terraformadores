@@ -13,11 +13,11 @@
 
     4.3  Trabajar en escenario de producción
 
-* Instalar un escenario de ollama + webui y probar Deepseek. Entender como funciona.
+* Instalar un escenario de ollama + webui y probar Deepseek. Entender como funciona. Documentar para el proyecto.
 
-* Instalar la misma configuración en local. Y relaizar pruebas.
+* Instalar la misma configuración en local. Y relalizar pruebas. Documentar para el proyecto.
 
-* Realizar los contenederes personalizados para IAlasenIA y publicarlos en dockerhub.
+* Realizar los contenederes personalizados para IAlasenIA y publicarlos en dockerhub. Documentar para el proyecto.
 
 
     4.4 Trabajar en escenario de desarrollo.
