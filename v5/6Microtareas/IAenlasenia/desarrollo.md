@@ -24,4 +24,6 @@
     
     ....
 5. Informar a los alumnos y tutores
+
 6. Garantizar la seguridad y acceso restringido
+
