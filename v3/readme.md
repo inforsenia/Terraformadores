@@ -27,7 +27,8 @@ Con determinación y entusiasmo,
 ### Markdown
 1. [Tarea 1:  Introducción a Markdown](./Markdown/Tarea1.md)
 
-[### Git/GitLab/GitHub
+<!--
+### Git/GitLab/GitHub
 1. [Tarea 1: Introducción a Git](./Git/Tarea1.md)
 2. [Tarea 2: Trabajando con Ramas](./Git/Tarea2.md)
 
@@ -45,4 +46,4 @@ Con determinación y entusiasmo,
 1. [Tarea 1: Formulario Rendimiento Terraformadores](./PHP/NotaMedia/Tarea1.md)
 2. [Tarea 2: CRUD](./PHP/CRUD/TareaCRUD.md)
 
-]: #
+-->
