@@ -29,7 +29,6 @@ Con determinación y entusiasmo,
 
 
 
-.
 <!--
 ### Git/GitLab/GitHub
 1. [Tarea 1: Introducción a Git](./Git/Tarea1.md)
