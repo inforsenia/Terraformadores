@@ -4,7 +4,7 @@ Vuestro profesor de ASO (Angel Berlanas) es en realidad Warren Worthington III, 
 
 La curiosidad, el cuidado por la naturaleza y una imaginación que pone a prueba los límites de la realidad son las señas de identidad de Warren Worthingthon III). 
 
-![WAngel en su laboratorio](imgs/angel-terraformadores-gnu-linux-2.jpeg)\
+<img src="imgs/angel-terraformadores-gnu-linux-2.jpeg" alt="Wangel" width="300" height="200">
 
 
 
