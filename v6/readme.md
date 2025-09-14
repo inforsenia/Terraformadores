@@ -6,7 +6,9 @@ La curiosidad, el cuidado por la naturaleza y una imaginación que pone a prueba
 
 <img src="imgs/angel-terraformadores-gnu-linux-2.jpeg" alt="Wangel" width="300" height="300">
 
-En este apartado de **Terraformadores** también veremos las actividades relacionadas con *Sostenibilidad Aplicada al Sector Productivo*.
+En este apartado de **Terraformadores** las actividades relacionadas con *Sostenibilidad Aplicada al Sector Productivo*.
+
+* [UP01-DesafiosEcosociales](./UD01-DesafiosEcosociales)
 
 
 
