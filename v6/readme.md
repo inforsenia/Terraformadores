@@ -8,7 +8,7 @@ La curiosidad, el cuidado por la naturaleza y una imaginación que pone a prueba
 
 En este apartado de **Terraformadores** las actividades relacionadas con *Sostenibilidad Aplicada al Sector Productivo*.
 
-* [UP01-DesafiosEcosociales](./UD01-DesafiosEcosociales)
+* [UP01-DesafiosEcosociales](./UD01-DesafiosEcosociales/readme.md)
 
 
 
