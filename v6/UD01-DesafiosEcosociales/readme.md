@@ -473,17 +473,29 @@ Aplicar los conocimientos para diseñar un cuadro eléctrico eficiente y sosteni
 
 - **¿Por qué has elegido esa potencia contratada?**
 
-  ________________________________________________________
+  _______________________________________________________
+
+
   ________________________________________________________
 
+
+
 - **¿Por qué esa distribución de circuitos?**
+
+  ________________________________________________________
   
+
+
   ________________________________________________________
-  ________________________________________________________
+
+
+
 
 - **Medidas de eficiencia energética propuestas:**
   
   ________________________________________________________
+
+
   ________________________________________________________
 
 ---
@@ -493,9 +505,22 @@ Aplicar los conocimientos para diseñar un cuadro eléctrico eficiente y sosteni
 ¿Crees que tu diseño es eficiente y sostenible? ¿Qué mejorarías?
 
 ________________________________________________________
+
+
 ________________________________________________________
+
+
+
 ________________________________________________________
+
+
+
 ________________________________________________________
+
+
+
+
+
 ## Actividad 05: [ASIR] - Viviendas por Intensidad de Uso
 
 En la plataforma de datos.gob.es existen multitud de conjuntos de datos que pueden ser 
@@ -519,31 +544,3 @@ De los campos asociados a cada municipio debe escribir por pantalla únicamente:
 Los municipios deben aparecer listados de manera descendente por el valor.
 
 **Entrega**:El Shell Script solicitado.
-# Guia 
-
-Apuntes para el docente.
-
-## Actividad: Debate sobre eficiencia energética y sostenibilidad
-
-**Objetivo:**
-
-Reflexionar sobre cómo el uso responsable de la electricidad contribuye a la sostenibilidad.
-
-**Materiales necesarios:**
-
-- Datos de consumo energético en España/Europa.
-- Ejemplos de energías renovables aplicadas a hogares.
-
-**Pasos:**
-
-1. **Investigación:** Buscar datos sobre el consumo energético medio y su impacto ambiental.
-2. **Propuestas:** Sugerir medidas para reducir el consumo en sus hogares.
-3. **Debate:** Discutir cómo pequeñas acciones pueden contribuir a un futuro más sostenible.
-
----
-
-## Evaluación
-
-- Informes o presentaciones orales.
-- Participación en los debates.
-- Pruebas prácticas (ej: identificar componentes en una foto de un cuadro eléctrico).
