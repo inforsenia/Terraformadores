@@ -29,9 +29,10 @@ Con determinación y entusiasmo,
 
 
 
-<!--
+
 ### Git/GitLab/GitHub
 1. [Tarea 1: Introducción a Git](./Git/Tarea1.md)
+<!--
 2. [Tarea 2: Trabajando con Ramas](./Git/Tarea2.md)
 
 ### Docker
