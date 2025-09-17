@@ -39,8 +39,14 @@ Con determinación y entusiasmo,
 ### Docker
 1. [Tarea 1: Introducción a Docker](./Docker/Tarea1Docker.md)
 
+-->
+
+
 ### YAML
 1. [Tarea 1: Introducción a YAML](./YAML/Tarea1YAML.md)
+
+<!--
+
 2. [Tarea 2: Trabajando con YAML en Python](./YAML/Tarea2YAML.md)
 
 ### LAMP

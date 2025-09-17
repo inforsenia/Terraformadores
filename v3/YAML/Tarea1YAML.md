@@ -1,28 +1,111 @@
-### Primer Ejercicio: Configuración de Redes con Netplan y YAML en Terraformadores de Venus
+### Tarea 1 YAML: Detección de Errores en YAML
 
-¡Bienvenidos a vuestra primera misión trabajando con el lenguaje de marcas **YAML** en **Terraformadores de Venus**! En esta ocasión, nos adentraremos en una de las aplicaciones más prácticas de YAML en el ámbito de la administración de sistemas: la configuración de redes en sistemas Linux. 
+En Terraformadores de Venus trabajamos con gran cantidad de configuraciones para desplegar servicios, contenedores y aplicaciones en nuestros servidores y en la nube privada NimbusNet. El lenguaje YAML es esencial en este proceso, ya que lo utilizamos constantemente para describir servicios, entornos y flujos de despliegue.
 
-En **Terraformadores de Venus**, el uso de herramientas como **Netplan** es fundamental para garantizar que nuestras infraestructuras estén siempre optimizadas, conectadas y seguras. Netplan, que utiliza archivos en formato YAML, permite gestionar la configuración de redes de manera sencilla y eficiente. Lo empleamos especialmente en nuestras soluciones basadas en **Ubuntu**, donde facilita la definición y aplicación de configuraciones de interfaces de red, tanto para conexiones por cable como inalámbricas.
+Un error en la indentación, en la estructura de los datos o en el tipo de valores puede impedir que todo un sistema se despliegue correctamente. Como parte del equipo técnico, tu misión será detectar y corregir errores en ficheros YAML defectuosos, explicando qué tipo de fallo has encontrado y proponiendo la solución adecuada.
 
-**Ejercicio: Configuración de Interfaces de Red en Terraformadores**
 
-Tu misión es configurar tres interfaces de red en uno de nuestros entornos, utilizando **Netplan** y trabajando con **Docker** para desplegar una máquina virtual. A continuación, se detallan las especificaciones que debes seguir para configurar cada una de las interfaces:
+## Enunciado de la Actividad
 
-- **Interfaz 1 (eth0):** Configura una dirección IP estática con los siguientes parámetros:
-  - **Dirección IP:** Debe ser una IP válida dentro del rango de ordenadores de tu aula.
-  - **Puerta de enlace:** Utiliza la puerta de enlace que emplean los ordenadores de tu aula.
-  - **Servidores DNS:** Configura los servidores DNS de Consellería, que son `10.238.3.7` y `10.238.3.8`.
+A continuación se te presentan varios fragmentos YAML con errores. Tu tarea es:
 
-- **Interfaz 2 (eth1):** Configura esta interfaz para que obtenga su configuración de red automáticamente mediante **DHCP**.
+1. **Identificar los errores en cada ejercicio.**
+2. **Corregirlos y mostrar la versión correcta.**
+3. **Explicar brevemente qué estaba fallando.**
 
-- **Interfaz 3 (wlan0):** Configura una interfaz Wi-Fi. Para ello, deberás introducir el **SSID** de la red y la **contraseña** del punto de acceso que tu profesor habilitará en el aula.
+---
 
-**Entrega del ejercicio:**
+### Ejercicio 1: El Error de Indentación
 
-En esta tarea, tu objetivo es demostrar no solo que puedes manejar la configuración de redes mediante **YAML** y **Netplan**, sino también que eres capaz de hacerlo dentro de una máquina virtual desplegada con **Docker**. A continuación, se detalla lo que debes entregar:
+Un despliegue en NimbusNet está fallando debido a un problema. Corrige el fichero:
 
-1. **Archivo YAML:** El fichero de configuración de **Netplan** generado con las tres interfaces de red configuradas.
-   
-2. **Documento Markdown:** Un documento con explicaciones breves del proceso que seguiste para la configuración de las interfaces. Incluye capturas de pantalla que demuestren que las configuraciones aplicadas en la máquina virtual (desplegada con Docker) se ejecutan correctamente.
+```yaml
+---
+servicios:
+  - nombre: web
+    imagen: nginx:latest
+    puertos:
+      - "80:80"
+      - "443:443"
+  - nombre: base_de_datos
+  imagen: postgres:13
+  entorno:
+    - POSTGRES_USER=admin
+    - POSTGRES_PASSWORD=secret
+```
 
-Esta es la primera de dos actividades en las que trabajarás con **YAML**, un lenguaje que es de suma utilidad en la administración de sistemas y la gestión de configuraciones en **Terraformadores de Venus**.
+---
+
+### Ejercicio 2: El Error de Tipo y Sintaxis
+
+Un compañero del equipo de despliegue ha escrito este fichero, pero el orquestador lo rechaza. Analiza y corrige:
+
+```yaml
+---
+usuario:
+  nombre: "Juan Perez"
+  edad: '25'
+  esta_activo: false
+  roles: [administrador, editor]
+  configuracion:
+    notificaciones_email: ON
+```
+
+---
+
+### Ejercicio 3: El Error de Clave Duplicada
+
+NimbusNet no acepta este archivo porque tiene errores. Identifica y corrige:
+
+```yaml
+---
+aplicacion:
+  nombre: "Mi App Web"
+  version: 1.0.0
+  puertos:
+    - "8080:80"
+  entorno:
+    - URL_DB=localhost
+    - PUERTO_DB=5432
+  entorno:
+    - ENV=production
+```
+
+---
+
+### Ejercicio 4: El Error de Estructura de Datos
+
+El siguiente *script* de automatización para pruebas está fallando porque la estructura no es la que espera el sistema. Corrige el error:
+
+```yaml
+---
+tareas:
+  - nombre: despliegue
+    pasos:
+      - etapa: "construir"
+        script: "npm run build"
+      - etapa: "desplegar"
+        script: "docker-compose up -d"
+  - nombre: test
+    etapa: "unitarios"
+    script: "npm test"
+    etapa: "integracion"
+    script: "mocha"
+```
+
+---
+
+### Ejercicio 5: El Error en Variables de Entorno
+
+El equipo de **Angel** detecta que este archivo YAML para un servicio de Terraformadores no es aceptado por el sistema debido al formato de las variables de entorno. Corrígelo:
+
+```yaml
+---
+servicio:
+  nombre: api_gateway
+  imagen: terraformadores/api:1.2
+  entorno:
+    DATABASE_URL: localhost:5432/db
+    DEBUG true
+    TIMEOUT=30
+```
