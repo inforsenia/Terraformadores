@@ -1,156 +1,256 @@
-# 🌌 Práctica de Docker Avanzado en Terraformadores de Venus
+# 📘 Dossier de Docker: Imágenes, Volúmenes, Docker Compose y Redes
 
-En **Terraformadores de Venus** trabajamos cada día con tecnologías que permiten desplegar servicios de forma rápida, escalable y sin errores de compatibilidad. Entre ellas, **Docker** es una de las más importantes: nos permite empaquetar aplicaciones en contenedores listos para ejecutarse en cualquier entorno.
-
-En esta práctica vas a realizar una serie de ejercicios para afianzar los conceptos clave de Docker: **contenedores en segundo plano, uso de volúmenes, construcción de imágenes personalizadas, orquestación con Docker Compose y despliegue de aplicaciones reales**.
-
-La secuencia de ejercicios está pensada para que paso a paso adquieras soltura en el uso de Docker, siempre con ejemplos aplicables a los proyectos de Terraformadores.
+**Módulo:** Administración de Sistemas Informáticos en Red (ASIR)
+**Tema:** Docker (Imágenes, Volúmenes, Orquestación con Compose y Redes)
 
 ---
 
-## 🚀 Ejercicio 1: Servidor Nginx en modo demonio
+## 1. 🐳 Imágenes con Dockerfile
 
-Terraformadores necesita desplegar un servicio web ligero para mostrar documentación interna.
+Una **imagen** en Docker es una **plantilla inmutable** que contiene todo lo necesario para ejecutar una aplicación (sistema base, librerías, dependencias, configuraciones, código).
+Un **contenedor** es una instancia **en ejecución** de esa imagen.
 
-* Crea un contenedor en **segundo plano (modo demonio)** utilizando la imagen oficial de **nginx**.
-* Verifica desde el navegador de tu máquina que el servidor está funcionando correctamente.
-* Investiga cómo **ver los logs** del contenedor y muéstralos en tu entrega.
+![alt text](docker_imagenes_contenedores.png)
 
-📌 *Este ejercicio te permitirá comprobar lo fácil que resulta levantar servicios web con Docker y monitorizar su actividad.*
 
-### 🔎 Pistas
+### 📌 Instrucciones principales de un Dockerfile
 
-* Para arrancar un contenedor en segundo plano usa:
+* **FROM** → Define la imagen base.
+* **RUN** → Ejecuta comandos durante la construcción.
+* **COPY / ADD** → Copia archivos al contenedor.
+* **WORKDIR** → Establece el directorio de trabajo.
+* **EXPOSE** → Informa del puerto que se usará.
+* **CMD / ENTRYPOINT** → Comando por defecto al iniciar.
+* **ENV** → Variables de entorno.
+* **VOLUME** → Define un volumen persistente.
 
-  ```bash
-  docker run -d -p 8080:80 nginx
-  ```
-* Para ver los logs del contenedor:
-
-  ```bash
-  docker logs <ID_contenedor>
-  ```
+![alt text](<build image.png>)
 
 ---
 
-## 📂 Ejercicio 2: Uso de volúmenes en Nginx
+### 📌 Ejemplo
 
-En Terraformadores no basta con levantar contenedores: necesitamos **persistencia de datos** y poder modificar contenidos fácilmente.
+```dockerfile
+FROM debian:latest
+RUN apt-get update && apt-get install -y nginx
+COPY index.html /var/www/html/index.html
+WORKDIR /var/www/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
 
-* Crea un contenedor de **nginx** que utilice un volumen para servir los archivos de la página web.
-* Modifica un fichero HTML en el **host** y comprueba que el cambio se refleja inmediatamente en el contenedor.
-* Explica la diferencia entre un **volumen nombrado** y un **bind mount**, e indica cuál has usado en tu prueba.
+```bash
+docker build -t miweb:v1 .
+docker run -d -p 8080:80 miweb:v1
+```
 
-📌 *Este ejercicio te ayudará a entender cómo se maneja la persistencia y la compartición de datos entre contenedores y host.*
-
-### 🔎 Pistas
-
-* Un **bind mount** se define con `-v ruta_host:ruta_contenedor`.
-* Por ejemplo, si en tu host tienes un directorio `./miweb` con un `index.html`, puedes montarlo así:
-
-  ```bash
-  docker run -d -p 8080:80 -v ./miweb:/usr/share/nginx/html nginx
-  ```
-* Cualquier cambio en `miweb/index.html` se reflejará al instante.
+👉 Hemos creado un **servidor web personalizado con Nginx**.
 
 ---
 
-## 🛠️ Ejercicio 3: Construcción de una imagen con Dockerfile
+## 2. 📂 Volúmenes en Docker
 
-Terraformadores necesita personalizar algunos de sus servicios para que no dependan solo de imágenes externas.
+Un **volumen** en Docker es un mecanismo para **persistir datos** fuera del ciclo de vida del contenedor.
 
-* Crea un **Dockerfile** que parta de la imagen oficial de **nginx** y copie dentro un `index.html` personalizado.
-* Construye tu propia imagen con un nombre reconocible.
-* Lanza un contenedor a partir de tu nueva imagen y comprueba que sirve tu página personalizada.
+* Si borramos el contenedor, los datos siguen existiendo.
+* Permite compartir datos entre contenedores.
+* Se almacena en el host (gestionado por Docker o definido manualmente).
 
-📌 *Este ejercicio te mostrará cómo generar imágenes personalizadas y reutilizables, clave en los despliegues internos de Terraformadores.*
 
-### 🔎 Pistas
+![alt text](docker_volume_1a47c4d290.png)
 
-* Usa en el `Dockerfile`:
-
-  ```dockerfile
-  FROM nginx
-  COPY index.html /usr/share/nginx/html/
-  ```
-* Construir la imagen:
-
-  ```bash
-  docker build -t mi-nginx-personalizado .
-  ```
-* Ejecutar un contenedor desde tu nueva imagen:
-
-  ```bash
-  docker run -d -p 8080:80 mi-nginx-personalizado
-  ```
 
 ---
 
-## ⚙️ Ejercicio 4: Orquestación básica con Docker Compose
+### 📌 Tipos de volúmenes
 
-En Terraformadores necesitamos coordinar varios servicios a la vez, y hacerlo contenedor por contenedor resulta ineficiente. Para ello utilizamos **Docker Compose**, que permite levantar entornos completos con un solo fichero.
+1. **Volúmenes nombrados**
 
-* Crea un fichero `docker-compose.yml` con dos servicios:
+   * Docker los gestiona automáticamente.
+   * Se almacenan en `/var/lib/docker/volumes/`.
+   * Ejemplo:
 
-  * Un servicio **nginx** expuesto en el puerto 8080.
-  * Un servicio **goaccess** (analizador de logs) que se conecte al contenedor de nginx para monitorizar en tiempo real sus registros de acceso.
+     ```bash
+     docker volume create datos_web
+     docker run -d -v datos_web:/usr/share/nginx/html nginx
+     ```
 
-* Ambos servicios deben estar en la misma red interna definida en el fichero Compose.
+2. **Bind Mounts**
 
-* Arranca los servicios con `docker-compose up -d`.
+   * Se enlaza un directorio específico del host al contenedor.
+   * Los cambios en el host se reflejan inmediatamente en el contenedor.
+   * Ejemplo:
 
-* Comprueba que puedes acceder a la web servida por nginx y que goaccess está procesando sus logs.
+     ```bash
+     docker run -d -v $(pwd)/pagina:/usr/share/nginx/html nginx
+     ```
 
-📌 *Este ejercicio no despliega la típica aplicación web con base de datos, sino que te muestra cómo levantar un pequeño ecosistema de servicios colaborativos, muy habitual en entornos profesionales como Terraformadores.*
+📌 **Comparación visual:**
 
-### 🔎 Pistas
+```
+Volumen nombrado:
+ [ Host (/var/lib/docker/volumes/datos_web) ] <---> [ Contenedor (/var/www/html) ]
 
-* La estructura básica de un `docker-compose.yml` es:
-
-  ```yaml
-  version: '3'
-  services:
-    servicio1:
-      image: ...
-    servicio2:
-      image: ...
-  ```
-* Para conectar servicios entre sí, basta con declararlos dentro del mismo fichero Compose (la red se crea automáticamente).
-* Comandos útiles:
-
-  * Levantar servicios: `docker-compose up -d`
-  * Listar servicios: `docker-compose ps`
-  * Ver logs: `docker-compose logs -f`
+Bind Mount:
+ [ Host (/home/user/pagina) ] <---> [ Contenedor (/usr/share/nginx/html) ]
+```
 
 ---
 
-## ☁️ Ejercicio 5: Despliegue de Nextcloud
+### 📌 Comandos útiles de volúmenes
 
-Terraformadores necesita un sistema de almacenamiento en la nube para compartir documentación entre los distintos equipos de trabajo. Para ello vamos a desplegar **Nextcloud** dentro de un contenedor Docker.
-
-* Revisa la documentación oficial de Nextcloud en **Docker Hub**.
-* Crea un contenedor que despliegue la aplicación Nextcloud.
-* Personaliza la configuración para que use una base de datos **sqlite** con un nombre de fichero definido por ti.
-* Accede desde el navegador y realiza el proceso de configuración inicial.
-
-📌 *Con este ejercicio practicarás el despliegue de una aplicación real de uso profesional utilizando Docker.*
-
-### 🔎 Pistas
-
-* Busca en Docker Hub la imagen `nextcloud`.
-* Puedes lanzar el contenedor con un volumen para persistir datos:
-
-  ```bash
-  docker run -d -p 8080:80 -v ./nextcloud:/var/www/html nextcloud
-  ```
-* Durante la configuración inicial, podrás elegir **SQLite** como motor de base de datos y definir el nombre del fichero de datos.
+```bash
+docker volume ls              # Listar volúmenes
+docker volume inspect datos_web   # Ver detalles
+docker volume rm datos_web    # Eliminar un volumen
+```
 
 ---
 
-## 📑 Entrega
+## 3. 📦 Docker Compose
 
-Debes entregar un documento en **Markdown** en tu repositorio de **GitLab**, que incluya:
+### 📌 ¿Qué es Docker Compose?
 
-* Una breve explicación de cada paso realizado.
-* Capturas de pantalla que demuestren el funcionamiento de cada ejercicio.
-* Una reflexión final sobre qué conceptos de Docker has reforzado en esta práctica.
+Es una herramienta de **orquestación ligera** que permite definir y ejecutar múltiples contenedores con un solo archivo (`docker-compose.yml`).
+
+Ventajas principales:
+
+* Definir servicios, redes y volúmenes en un único fichero.
+* Levantar y detener todo un entorno con un solo comando.
+* Evita tener que escribir largos `docker run ...`.
+* Permite reproducir entornos fácilmente en distintos equipos.
+
+📌 **Esquema conceptual:**
+
+```
+docker-compose.yml
+   ├── Servicio A (Nginx)
+   ├── Servicio B (Alpine con cliente curl/ping)
+   └── Red compartida entre ambos
+```
+
+---
+
+### 📌 Ejemplo básico de Docker Compose
+
+Archivo `docker-compose.yml`:
+
+```yaml
+version: "3.8"
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    networks:
+      - terraformadores
+
+  cliente:
+    image: alpine
+    command: ping web
+    networks:
+      - terraformadores
+
+networks:
+  terraformadores:
+```
+
+👉 En este ejemplo:
+
+* Se levanta un servicio **Nginx** expuesto en el puerto `8080`.
+* Se levanta un servicio **Alpine** que hace `ping` al servicio `web`.
+* Ambos comparten la red `terraformadores`, creada automáticamente.
+
+---
+
+### 📌 Comandos principales de Docker Compose
+
+```bash
+docker-compose up -d       # Levantar servicios en segundo plano
+docker-compose down        # Detener y eliminar servicios, redes y volúmenes
+docker-compose ps          # Listar contenedores gestionados por Compose
+docker-compose logs -f     # Ver logs en tiempo real
+docker-compose build       # Reconstruir imágenes si hay cambios en Dockerfile
+docker-compose exec web sh # Entrar al contenedor 'web'
+```
+
+---
+
+## 4. 🌐 Redes en Docker
+
+Las **redes** en Docker permiten la comunicación entre contenedores y con el exterior.
+
+📌 **Esquema simplificado:**
+
+```
+   [ Contenedor A ] --+
+                      |--> [ Red bridge Docker ] --> Internet/Host
+   [ Contenedor B ] --+
+```
+
+---
+
+### 📌 Tipos de redes
+
+* **bridge (por defecto)** → Permite comunicación entre contenedores de la misma red.
+* **host** → El contenedor comparte la red del host.
+* **none** → Sin red.
+
+---
+
+### 📌 Comandos para redes
+
+```bash
+docker network create terraformadores
+docker run -d --name web --network terraformadores nginx
+docker run -d --name cliente --network terraformadores alpine ping web
+docker network inspect terraformadores
+```
+
+---
+
+### 📌 Redes en Docker Compose
+
+Con Compose, crear y usar redes es aún más fácil.
+
+Ejemplo en `docker-compose.yml`:
+
+```yaml
+version: "3.8"
+
+services:
+  servidor:
+    image: nginx
+    ports:
+      - "8080:80"
+    networks:
+      - red_privada
+
+  cliente:
+    image: alpine
+    command: ping servidor
+    networks:
+      - red_privada
+
+networks:
+  red_privada:
+    driver: bridge
+```
+
+👉 Aquí:
+
+* Creamos una red llamada `red_privada`.
+* Los dos servicios se comunican entre sí usando sus nombres (`servidor`, `cliente`).
+* El cliente puede hacer `ping servidor` gracias a la resolución de nombres automática de Docker.
+
+---
+
+## 📌 Resumen Final
+
+1. **Imágenes con Dockerfile** → Plantillas para crear contenedores personalizados.
+2. **Volúmenes** → Persistencia de datos (nombrados o Bind Mounts).
+3. **Docker Compose** → Orquestación de múltiples contenedores, redes y volúmenes en un único archivo.
+4. **Redes** → Comunicación entre contenedores (manual o definida en Compose).
+
+
