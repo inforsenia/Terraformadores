@@ -48,6 +48,30 @@ Configurad en vuestro servidor Ubuntu el servicio `knockd` para que cuando se re
 ponga en marcha el Servicio OpenSSH para permitir el login remoto y además ponga un pequeño demonio/script
 en el puerto `8080` implementado con `nc` que guarda todo lo que se le envía en el fichero: `/tmp/nc-YYYYMMDD.log`. 
 
+### Pistas 
+
+En el fichero de configuración del servicio de `knockd` se debe indicar
+el nombre de la tarjeta de red:
+
+Adjunto un trocito de la página de manual donde se listan los diferentes
+parámetros que se pueden establecer.
+
+```man
+
+Configuration: Global Directives
+
+UseSyslog
+    Log action messages through syslog(). This will insert log entries into your /var/log/messages or equivalent. 
+LogFile = /path/to/file
+    Log actions directly to a file, usually /var/log/knockd.log. 
+PidFile = /path/to/file
+    Pidfile to use when in daemon mode, default: /var/run/knockd.pid. 
+Interface = <interface_name>
+    Network interface to listen on. Only its name has to be given, not the path to the device (eg, "eth0" and not "/dev/eth0"). Default: eth0.
+
+```
+
+
 ## Paso 3 : 
 
 Describid los pasos realizados y subir el script, el fichero de configuración y lo que consideréis útil a
