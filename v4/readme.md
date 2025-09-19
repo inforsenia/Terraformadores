@@ -1,16 +1,16 @@
-# Administración de Sistemas Operativos - ASO
+# Sistemas Operativos - ASO
 
 Información relativa al Módulo de Administración de Sistemas Operativos
 
-## Materiales
+### Materiales
 
 * [UP01-Networking and Processes - PortKnocking](./UP01-NetworkProcess/task-portknocking-scp.md)
 
-## Filosofía práctica
+### Filosofía práctica
 
 ![Zen of Python](imgs/zen-of-python.jpg)
 
-## Enlaces de interés
+### Enlaces de interés
 
 * [vim](https://www.vim.org)
 
