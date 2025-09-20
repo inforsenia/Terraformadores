@@ -9,6 +9,7 @@ Los materiales que encontraréis aquí son un destilado de la fuente : [GitLab -
 ## Índice
 
 * [UP01-DesafiosEcosociales](./UD01-DesafiosEcosociales/readme.md)
+* [UP01-Consumo Electrico Ordenadores](./UD01-DesafiosEcosociales/UP01-Task-ConsumoElectrico.md)
 
 
 
