@@ -4,7 +4,7 @@ No estéis tristes, SAD se refiere a Seguridad y Alta Disponibilidad. En este es
  
 Intentaré guiaros con mi sabiduría para conseguir ese objetivo, pero no olvidéis mi poder mental. Si quisiera podría saber en todo momento lo que pensáis, así que no se os ocurra utilizar lo que aprendamos para convertiros en uno de esos atacantes.
 
-![Charles Xavier](img/charlesXavier.jpg){width="15px"}
+![Charles Xavier](img/charlesXavier.jpg){ width="300" }
 
 ## Tareas
 
