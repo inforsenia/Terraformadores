@@ -18,7 +18,22 @@ Asumiendo que hay un presupuesto "sin límite" para comprar ordenadores, realiza
 
 #### Items del estudio
 
-A RELLENAR EN CLASE
+| Elemento | Consumo Reposo | Consumo en Carga de Trabajo |
+|----------|----------------|-----------------------------|
+| Monitor  |                |                             |
+| Alumbrado|                |                             |
+| Aire Acondicionado|       |                             |
+| Pantalla |                |                             |
+| Calefacción|              |                             |
+| T.Gráfica|                |                             |
+| Fuente Alimentación|      |                             |
+| CPU |                     |                             |
+| RAM |                     |                             |
+| Switch Huawei |           |                             |
+| MikroTik |                |                             |
+| Altavoces |               |                             |
+| Wifi Aruba |              |                             |
+| Luz de Emergencia |       |                             |
 
 
 **Entrega**:El estudio completo en Markdown en GitLab/GitHub.
