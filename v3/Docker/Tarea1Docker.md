@@ -23,12 +23,12 @@ Terraformadores necesita desplegar un servicio web ligero para mostrar documenta
 * Para arrancar un contenedor en segundo plano usa:
 
   ```bash
-  docker run -d -p 8080:80 nginx
+  docker run -d -p ...
   ```
 * Para ver los logs del contenedor:
 
   ```bash
-  docker logs <ID_contenedor>
+  docker logs ...
   ```
 
 ---
@@ -70,19 +70,17 @@ Terraformadores necesita personalizar algunos de sus servicios para que no depen
 * Usa en el `Dockerfile`:
 
   ```dockerfile
-  FROM nginx
-  COPY index.html /usr/share/nginx/html/
+  FROM ...
+  COPY index.html `ruta_dentro_del_contenedor`
+  ...
+  ...
   ```
 * Construir la imagen:
 
   ```bash
-  docker build -t mi-nginx-personalizado .
+  docker build -t nombre_imagen ruta_al_dockerfile (generalmente . si estas en la misma carpeta)
   ```
-* Ejecutar un contenedor desde tu nueva imagen:
-
-  ```bash
-  docker run -d -p 8080:80 mi-nginx-personalizado
-  ```
+* Ejecutar un contenedor desde tu nueva imagen
 
 ---
 
@@ -101,7 +99,7 @@ En Terraformadores necesitamos coordinar varios servicios a la vez, y hacerlo co
 
 * Comprueba que puedes acceder a la web servida por nginx y que goaccess está procesando sus logs.
 
-📌 *Este ejercicio no despliega la típica aplicación web con base de datos, sino que te muestra cómo levantar un pequeño ecosistema de servicios colaborativos, muy habitual en entornos profesionales como Terraformadores.*
+📌 *Este ejercicio te muestra cómo levantar un pequeño ecosistema de servicios colaborativos, muy habitual en entornos profesionales como Terraformadores.*
 
 ### 🔎 Pistas
 
@@ -130,7 +128,8 @@ Terraformadores necesita un sistema de almacenamiento en la nube para compartir 
 
 * Revisa la documentación oficial de Nextcloud en **Docker Hub**.
 * Crea un contenedor que despliegue la aplicación Nextcloud.
-* Personaliza la configuración para que use una base de datos **sqlite** con un nombre de fichero definido por ti.
+* Personaliza la configuración del `docker run` para que use una base de datos **sqlite** con un nombre de fichero definido por ti.
+* Debes lanzar el contenedor con un volumen en la misma carpeta donde se lanza el contenedor para persistir datos
 * Accede desde el navegador y realiza el proceso de configuración inicial.
 
 📌 *Con este ejercicio practicarás el despliegue de una aplicación real de uso profesional utilizando Docker.*
@@ -138,19 +137,14 @@ Terraformadores necesita un sistema de almacenamiento en la nube para compartir 
 ### 🔎 Pistas
 
 * Busca en Docker Hub la imagen `nextcloud`.
-* Puedes lanzar el contenedor con un volumen para persistir datos:
-
-  ```bash
-  docker run -d -p 8080:80 -v ./nextcloud:/var/www/html nextcloud
-  ```
-* Durante la configuración inicial, podrás elegir **SQLite** como motor de base de datos y definir el nombre del fichero de datos.
+* Recuerda lanzar el contenedor con un volumen para persistir datos
+* Antes de lanzar el contenedor busca el parámetro que tienes que añadir al `docker run` para elegir **SQLite** como motor de base de datos y definir el nombre del fichero de datos.
 
 ---
 
 ## 📑 Entrega
 
-Debes entregar un documento en **Markdown** en tu repositorio de **GitLab**, que incluya:
+Debes entregar un documento en **Markdown** en tu repositorio de **GitLab/GitHub**, que incluya:
 
 * Una breve explicación de cada paso realizado.
 * Capturas de pantalla que demuestren el funcionamiento de cada ejercicio.
-* Una reflexión final sobre qué conceptos de Docker has reforzado en esta práctica.
