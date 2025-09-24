@@ -37,6 +37,10 @@ El uso de ramas en Git es una práctica fundamental para gestionar proyectos de 
    **Uso**: Para pruebas o prototipos.  
    **Ventajas**: Flexibilidad para experimentar sin consecuencias sobre el proyecto principal.
 
+
+![alt text](ramas.png)
+
+
 ### Comandos principales de Git para la gestión de ramas
 
 A continuación se presenta una lista de comandos esenciales para trabajar con ramas en Git, junto con ejemplos ilustrativos.
