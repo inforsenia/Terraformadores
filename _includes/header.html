@@ -14,10 +14,8 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=code_blocks" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=logo_dev" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=power_settings_circle" />
-    {% for css in layout.css %}
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+     {% for css in layout.css %}
     {% if css contains "//" %}
     <link rel="stylesheet" href="{{css}}">
     {% else %}
@@ -62,12 +60,12 @@
         <li><a class="waves-effect" href="{{site.baseurl}}/intro"><i class="material-icons">description</i>Terraformadores de Venus</a></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/v1"><i class="material-icons">security</i>Seguridad y Alta Disp.</a></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/v2"><i class="material-icons">person</i>Jean Grey </a></li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/v3"><i class="material-symbols-outlined">code_blocks</i>Implantación Aplicaciones Web</a></li>
+        <li><a class="waves-effect" href="{{site.baseurl}}/v3"><span class="material-symbols-outlined">code_blocks</span>Implantación Aplicaciones Web</a></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/v4"><i class="material-icons">terminal</i>Sistemas Operativos</a></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/v6"><i class="material-icons">compost</i>Sostenibilidad</a></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/v5"><i class="material-icons">person</i>Iceman</a></li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/v7"><i class="material-symbols-outlined">logo_dev</i>Introducc. Programación</a></li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/v8"><i class="material-symbols-outlined">power_settings_circle</i>Digitalización</a></li>
+        <li><a class="waves-effect" href="{{site.baseurl}}/v7"><span class="material-symbols-outlined">logo_dev</span>Introducc. Programación</a></li>
+        <li><a class="waves-effect" href="{{site.baseurl}}/v8"><span class="material-symbols-outlined">power_settings_circle</span>Digitalización</a></li>
          <li><div class="divider"></div></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/about"><i class="material-icons">person</i>About</a></li>
       </ul>
