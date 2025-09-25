@@ -13,7 +13,7 @@ Stan y Jack, apasionados por las tecnologías disruptivas y el servicio al clien
 Actualmente trabajamos un equipo multidisciplinar formado por:    
 1. Charles Xavier (Profesor X): Serguro y con altas capaciades.
 2. Jean Grey (Marvel Girl): Telepática y telequinética además de distribuir BBDD.
-3. Beast (Hank McCoy): Superfuerza, agilidad y facilidad para desplegar todo tipo de artefactos.
+3. Beast/Dr.Strange/Vision: Superfuerza, agilidad y facilidad para desplegar todo tipo de artefactos. Maestros de la lógica y de los lenguajes de programación. Digitalizadores en sus ratos libres.
 4. Angel (Warren Worthington III): ASO y Sostenibilidad 
 5. Iceman (Bobby Drake): Capacidad para generar y manipular hielo, además de distribir información y bautizar todo tipo de dispositivo.
  

@@ -6,7 +6,7 @@ En **Terraformadores de Venus**, cada área de conocimiento está guiada por un 
 
 <center>
 
-<img src="strange.jpg" width="60%">
+<img src="strange.jpg" width="40%">
 
 </center>
 

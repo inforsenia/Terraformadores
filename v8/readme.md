@@ -1,7 +1,7 @@
 # Digitalización
 
 
-## 🌐 Módulo de Digitalización en Terraformadores de Venus
+### 🌐 Módulo de Digitalización en Terraformadores de Venus
 
 En el universo de **Terraformadores de Venus**, cada módulo está guiado por un mentor especial. En esta ocasión, quien nos acompaña es **Vision**, un ser nacido de la unión entre la tecnología más avanzada y la inteligencia artificial más sofisticada. Vision representa la **síntesis perfecta entre lo humano y lo digital**, y por eso es el guía ideal para este módulo.
 
@@ -9,7 +9,7 @@ En el universo de **Terraformadores de Venus**, cada módulo está guiado por un
 
 <center>
 
-<img src="vision.jpg" width="60%">
+<img src="vision.jpg" width="40%">
 
 </center>
 
