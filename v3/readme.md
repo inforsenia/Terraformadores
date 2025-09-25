@@ -17,8 +17,10 @@ Así que preparaos para desplegar toda vuestra energía y pasión. Trabajaremos 
 Con determinación y entusiasmo,
 **Hank McCoy (Beast)**
 
+<center>
+<img src="./img/beast.jpg" alt="Beast" width="60%"/>
+</center>
 
-<img src="./img/beast.jpg" alt="Beast" width="70%"/>
 <br>
 <br>
 
