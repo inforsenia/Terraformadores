@@ -1,6 +1,6 @@
-# UD1 – Adopción de pautas de seguridad informática
+# UP02 – Criptografía
 
-## Tarea 3: Cifrado simétrico
+## Tarea 1: Cifrado simétrico
 
 **OpenPGP** es un protocolo no propietario para encriptación basado en el original PGP (Pretty Good Privacy) 
 

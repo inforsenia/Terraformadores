@@ -1,4 +1,4 @@
-# UD1 – Adopción de pautas de seguridad informática
+# UP01 – Adopción de pautas de seguridad informática
 
 ## Tarea 2: rsync
 
@@ -11,13 +11,14 @@ A lo largo de esta tarea vais a utilizar y comprobar algunas de las caracterísi
 Deberéis documentar con capturas de pantalla cada uno de los pasos y/o comprobaciones que se piden.
 
 Todas las opciones que se van a pedir podréis encontrarlas con sultando el manual del comando: 
+
 ``` man rsync ```
 
 En primer lugar, crea un directorio que será donde vamos a tener los datos originales que queremos guardar mediante una copia de seguridad y, a continuación, crea o descarga varios archivos de diferentes tamaños. Crea también dentro una estrutura de directorios para poder comprobar la recursividad del comando cuando así se solicite.
 
 Crea tambien otro directorio local, en otra ubicación, donde se alamacenarán las copias de seguridad.
 
-** Ahora ya podemos empezar a realizar las pruebas: **
+**Ahora ya podemos empezar a realizar las pruebas:**
 
 1. Realiza una copia básica del directorio de origen en el directorio de destino. Hazlo primero con la opción ``` -rv ``` y después con ``` -av ``` y explica la diferencia entre ambas.
 2. Borra algún fichero en el directorio de origen y realiza de nuevo la copia. ¿Qué pasa?
