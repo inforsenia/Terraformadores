@@ -18,6 +18,8 @@ La entrega de todas las tareas las podréis realizar a través de *Aules* con un
 
 * [UP02-Tarea 1 - Criptografía simétrica](./UP02/Tarea1-Cifrado_simetrico.md)
 
+* [UP02-Tarea 2 - Criptografía asimétrica](./UP02/Tarea2-Cifrado_asimetrico.md)
+
 [### Tarea 3 - John the Ripper]: #
 
 [En esta tarea aprenderemos a valorar el uso de contraseñas seguras.]: #
