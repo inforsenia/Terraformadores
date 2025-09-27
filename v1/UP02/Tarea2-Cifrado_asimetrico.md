@@ -10,25 +10,25 @@ A continuación vamos a explicar cómo se utiliza para generar un par de claves 
 
 Nos solicitará una serie de datos. Con esos datos se identificarán las claves, por lo que conviene poner datos reales.
 
-![](../imgs/tarea6-1.png){width=400px}
+![](./imgs/tarea6-1.png)
 
 También nos pedirá una contraseña con la que proteger el llavero donde se guardarán las claves generadas.
 
-![](../imgs/tarea6-2.png){width=400px}
+![](./imgs/tarea6-2.png)
 
 Tardará un rato en generar las claves. Durante ese tiempo podemos ejecutar otros programas o mover el ratón para que el generador de bytes aleatorios tenga más datos con los que trabajar (entropía) y generar así una clave más segura.
 
 Cuando finalice nos mostrará las claves creadas, así como el uid, es decir, el nombre que le hemos dado.
 
-![](../imgs/tarea6-3.png){width=400px}
+![](./imgs/tarea6-3.png)
 
 En nuestro directorio ```HOME``` se habrá creado un directorio oculto ```.gnupg``` donde se guardan los ficheros internos que utiliza la herramienta.
 
-![](../imgs/tarea6-4.png){width=400px}
+![](./imgs/tarea6-4.png)
 
 2. Podemos listar las claves con el comando ```gpg --list-keys```
 
-![](../imgs/tarea6-5.png){width=400px}
+![](./imgs/tarea6-5.png)
 
 3. Para poder enviar nuestra clave privada a alguien con quien queramos comunicarnos, para que nos envíe mensajes cifrados con ella, primero tenemos que sacarla del llavero con el parámetro export:
 
@@ -36,20 +36,20 @@ En nuestro directorio ```HOME``` se habrá creado un directorio oculto ```.gnupg
 
 Ese fichero ya lo podremos enviar a la persona con quien queramos comunicarnos.
 
-![](../imgs/tarea6-6.png){width=400px}
+![](./imgs/tarea6-6.png)
 
 4. Esa persona deberá importar nuestra clave pública para poder utilizarla. Se utiliza el comando:
 ```gpg --import nombre_fichero```
 
-![](../imgs/tarea6-7.png){width=400px}
+![](./imgs/tarea6-7.png)
 
 Si ese usuario vuelve a ejecutar ```gpg --list-keys``` verá que, junto con sus propias claves, ha aparecido una nueva del usuario alumno.
 
-![](../imgs/tarea6-8.png){width=400px}
+![](./imgs/tarea6-8.png)
 
 5. Creamos un fichero con un mensaje.
 
-![](../imgs/tarea6-9.png){width=400px}
+![](./imgs/tarea6-9.png)
 
 Para encriptar el fichero con la clave pública recién importada utilizaremos el siguiente comando:
 
@@ -63,19 +63,19 @@ Para encriptar el fichero con la clave pública recién importada utilizaremos e
 
 Al intentar cifrar el sistema nos indicará que no hay seguridad de que esa clave pertenezca realmente al usuario que especificamos. Cualquiera podría haber copiado el fichero alumno.pub antes de que hiciésemos el import. El comando nos ofrece la huella como ayuda y nos pide que confirmemos si queremos continuar.
 
-![](../imgs/tarea6-10.png){width=400px}
+![](./imgs/tarea6-10.png)
 
 Para ver la huella de nuestra clave pública podemos usar el comando ```gpg --fingerprint``` con lo que podríamos pedirle al destinatario que nos envió la clave pública que nos enviase también su huella y comprobar que coincide con la que nos da el sistema.
 
-![](../imgs/tarea6-11.png){width=400px}
+![](./imgs/tarea6-11.png)
 
 6. Finalmente, cuando recibimos el mensaje cifrado con nuestra clave pública, podemos descifrarlo con el comando ```gpg --decrypt mensaje.cifrado```
 
 El sistema nos solicitará la contraseña de nuestro llavero y mostrará el mensaje por pantalla. También podemos usar ```-o``` para llevarlo a un fichero.
 
-![](../imgs/tarea6-12.png){width=400px}
+![](./imgs/tarea6-12.png)
 
-![](../imgs/tarea6-13.png){width=400px}
+![](./imgs/tarea6-13.png)
 
 7. Una vez visto esto podemos entender cómo funciona la firma digital. Vamos a seguir trabajando con el mensaje original. En primer lugar tenemos que crear la huella del mensaje, para lo que utilizaremos el comando:
 
@@ -83,11 +83,11 @@ El sistema nos solicitará la contraseña de nuestro llavero y mostrará el mens
 
 Este comando nos generará, a partir de  nuestra clave privada, un nuevo fichero llamado ```nombre_fichero.asc``` que contendrá el cifrado del hash del fichero original, es decir, la firma. Si enviamos el fichero junto con la firma a un destinatario que tenga nuestra clave pública, podrá comprobar que el fichero es nuestro y no se ha modificado.
 
-![](../imgs/tarea6-14.png){width=400px}
+![](./imgs/tarea6-14.png)
 
 El contenido del fichero será algo similar a esto:
 
-![](../imgs/tarea6-15.png){width=400px}
+![](./imgs/tarea6-15.png)
 
 - Cuando recibimos un fichero con su firma (como en el caso anterior){width=400px} debemos usar el siguiente comando para comprobar esa firma:
 
@@ -101,7 +101,7 @@ Ese comando nos dirá si realmente la firma corresponde al fichero original, con
 
 En este caso tendremos tanto la firma como el contenido del fichero original dentro del fichero ```nombre_fichero.asc```. El contenido del fichero será similar a esto:
 
-![](../imgs/tarea6-16.png){width=400px}
+![](./imgs/tarea6-16.png)
 
 También podemos comprobar que el fichero es de quién dice ser utilizando el comando del punto anterior.
 
@@ -111,7 +111,7 @@ También podemos comprobar que el fichero es de quién dice ser utilizando el co
 
 Esta vez tendremos un fichero llamado ```nombre_fichero.asc``` que contendrá tanto el contenido del fichero original como la firma y, además, estará cifrado con nuestra clave privada. Ya podemos enviarlo de forma segura al destinatario que queramos.
 
-![](../imgs/tarea6-17.png){width=400px}
+![](./imgs/tarea6-17.png)
 
 10. Ahora vemos otro punto débil. Cualquiera que intercepte el mensaje y tenga nuestra clave pública, podrá desencriptarlo. ¿Cómo lo solucionamos? La solución es encriptar con la clave pública del destinatario y después, firmar con nuestra clave privada. Así, cualquiera que intercepte el mensaje y tenga nuestra clave pública podrá comprobar que el mensaje que ha interceptado es nuestro, pero no podrá acceder al contenido ya que sólo el destinatario podrá desencriptarlo con su clave privada.
 
