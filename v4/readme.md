@@ -5,6 +5,7 @@ Información relativa al Módulo de Administración de Sistemas Operativos
 ### Materiales
 
 * [UP01-Networking and Processes - PortKnocking](./UP01-NetworkProcess/task-portknocking-scp.md)
+* [UP01-Errores en NetPlan](./UP01-NetworkProcess/task-encuentra-errores-netplan.md)
 
 ### Filosofía práctica
 
