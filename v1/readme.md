@@ -10,7 +10,7 @@ Intentaré guiaros con mi sabiduría para conseguir ese objetivo, pero no olvid�
 
 A continuación aparecerán unas tareas que deberéis superar para aprender lo que se comenta arriba, así como para ser dignos de pertenecer finalmente a **Terraformadores de Venus**
 
-La entrega de todas las tareas las podréis realizar a través de *Aules* con un enlace la parte de vuestro repositorio donde tenéis la resolución de la tarea
+La entrega de todas las tareas las podréis realizar a través de *Aules* con un enlace a la parte de vuestro repositorio donde tenéis la resolución de la tarea
 
 * [UP01-Tarea 1 - Instalación de un Keylogger](./UP01/Tarea1-Keylogger.md)
 
