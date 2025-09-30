@@ -20,6 +20,8 @@ La entrega de todas las tareas las podréis realizar a través de *Aules* con un
 
 * [UP02-Tarea 2 - Criptografía asimétrica](./UP02/Tarea2-Cifrado_asimetrico.md)
 
+* [UP02-Tarea 3 - Rsync con certificados](./UP02/Tarea3-rsyncCertificados.md)
+
 [### Tarea 3 - John the Ripper]: #
 
 [En esta tarea aprenderemos a valorar el uso de contraseñas seguras.]: #
