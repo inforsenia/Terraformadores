@@ -34,11 +34,8 @@ Con determinación y entusiasmo,
 
 ### Git/GitLab/GitHub
 1. [Tarea 1: Introducción a Git](./Git/Tarea1.md)
-
-<!--
 2. [Tarea 2: Trabajando con Ramas](./Git/Tarea2.md)
 
--->
 
 ### Docker
 1. [Tarea 1: Docker para Terraformadores](./Docker/Tarea1Docker.md)
@@ -52,6 +49,10 @@ Con determinación y entusiasmo,
 <!--
 
 2. [Tarea 2: Trabajando con YAML en Python](./YAML/Tarea2YAML.md)
+
+-->
+
+<!--
 
 ### LAMP
 1. [Tarea 1: Instalación y configuración LAMP](./UD2/Tarea1LAMP.md)
