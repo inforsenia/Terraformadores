@@ -1,0 +1,39 @@
+# Tarea : [ Calienta que Sales ] 
+
+En una maquina `ubuntuserver` configurada en Red Nat (10.42.42.0/24), y poner accesible
+el SSH en el puerto 2242 del hipervisor. 
+
+cread 3 usuarios más aparte del admin vuestro:
+
+- adminaso -> Estar en `sudo` y el intérprete es `bash`.
+- backupaso -> zsh y cuando inicie sesión que compruebe que la ruta siguiente existe:
+```shell
+/home/backupaso/2025/SEMANA/Lunes
+                           /Martes
+                           /Miercoles
+                           /Jueves
+                           /Viernes
+                           /Sabado
+                           /Domingo
+
+```
+para cada uno de los directorios, comprobar que existe y si no crearlo mostrando y loggeando
+en el syslog todas las operaciones.
+
+- dummy -> rbash -> que pueda ejecutar nano y cd a directorios.
+
+Configurad que solo puedan logarse esos 4 usuarios en el sshd de la máquina.
+
+## Ideas para el examen
+
+* Usuarios que puedan iniciar sesión sin password.
+* Copia de ficheros remotos con rsync.
+* Opciones avanzandas del rsync.
+* Cifrado simetrico y asimetrico.
+* Comprobaciones básicas de permisos.
+* Comprobaciones de ficheros.
+* Comprobaciones de estructuras, passwords, tamaños de ficheros, fechas,...
+
+## Consejos
+
+Instalar en vuestra casa GNU/LinuX y Virtualizar como toca.
