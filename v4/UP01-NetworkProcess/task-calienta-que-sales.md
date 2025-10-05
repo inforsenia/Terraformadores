@@ -3,11 +3,24 @@
 En una maquina `ubuntuserver` configurada en Red Nat (10.42.42.0/24), y poner accesible
 el SSH en el puerto 2242 del hipervisor. 
 
-cread 3 usuarios más aparte del admin vuestro:
+Cread 3 usuarios más aparte del admin vuestro (adminaso,backupaso y dummy)
 
 - adminaso -> Estar en `sudo` y el intérprete es `bash`.
 - backupaso -> zsh y cuando inicie sesión que compruebe que la ruta siguiente existe:
-```shell
+para cada uno de los directorios, comprobar que existe y si no crearlo mostrando y loggeando
+en el syslog todas las operaciones.
+
+
+| Usuario  | Shell | Opciones                        |
+|----------|-------|---------------------------------|
+| adminaso | bash  | Estar en sudo                   |
+| backupaso| zsh   | Script de creación (ver abajo)  |
+| dummy    | rbash | ejecutar nano y cd a directorios|
+
+
+**Script** cuando el usuario `backupaso` inicie sesión que se comprueben las siguientes rutas:
+
+```bash
 /home/backupaso/2025/SEMANA/Lunes
                            /Martes
                            /Miercoles
@@ -16,11 +29,11 @@ cread 3 usuarios más aparte del admin vuestro:
                            /Sabado
                            /Domingo
 
-```
-para cada uno de los directorios, comprobar que existe y si no crearlo mostrando y loggeando
-en el syslog todas las operaciones.
 
-- dummy -> rbash -> que pueda ejecutar nano y cd a directorios.
+```
+
+Donde la variable `SEMANA` ha de cambiarse por la semana del año en la que estamos, calculada
+dinámicamente (pista : `script en python3`).
 
 Configurad que solo puedan logarse esos 4 usuarios en el sshd de la máquina.
 
