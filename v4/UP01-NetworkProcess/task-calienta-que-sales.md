@@ -5,10 +5,6 @@ el SSH en el puerto 2242 del hipervisor.
 
 Cread 3 usuarios más aparte del admin vuestro (adminaso,backupaso y dummy)
 
-- adminaso -> Estar en `sudo` y el intérprete es `bash`.
-- backupaso -> zsh y cuando inicie sesión que compruebe que la ruta siguiente existe:
-para cada uno de los directorios, comprobar que existe y si no crearlo mostrando y loggeando
-en el syslog todas las operaciones.
 
 
 | Usuario  | Shell | Opciones                        |
@@ -33,7 +29,10 @@ en el syslog todas las operaciones.
 ```
 
 Donde la variable `SEMANA` ha de cambiarse por la semana del año en la que estamos, calculada
-dinámicamente (pista : `script en python3`).
+dinámicamente (pista : `script en python3`). Y para cada uno de los directorios, 
+comprobar que existe y si no crearlo mostrando y *loggeando* en el `syslog` todas las operaciones.
+
+
 
 Configurad que solo puedan logarse esos 4 usuarios en el sshd de la máquina.
 
