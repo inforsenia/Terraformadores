@@ -22,6 +22,8 @@ La entrega de todas las tareas las podréis realizar a través de *Aules* con un
 
 * [UP02-Tarea 3 - Rsync con certificados](./UP02/Tarea3-rsyncCertificados.md)
 
+* [UP02-Tarea 4 - Certificados SSL](./UP02/Tarea4-CertificadosSSL.md)
+
 [### Tarea 3 - John the Ripper]: #
 
 [En esta tarea aprenderemos a valorar el uso de contraseñas seguras.]: #
