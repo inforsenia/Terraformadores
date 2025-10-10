@@ -10,6 +10,14 @@ Vision, nuestro mentor en digitalización, os ha encomendado una tarea crucial: 
 
 Aunque cada grupo trabajará con una plataforma diferente (Odoo, ERPNext, PrestaShop o WooCommerce), todos seguiréis los mismos objetivos y pasos para poder comparar los resultados y comprender mejor cómo estas herramientas impulsan la digitalización de las empresas.
 
+<center><img src="./odoo.png" width="40%"></center>
+<center><img src="./erp-next.jpg" width="40%"></center>
+<center><img src="./prestashop-color-itop-78336978.png" width="40%"></center>
+<center><img src="./logo-woocommerce.jpg" width="40%"></center>
+
+
+*<center><small> Sistemas ERP y E-commerce </small></center>*
+
 ---
 
 ### 🎯 Objetivo Principal
@@ -18,6 +26,8 @@ Aunque cada grupo trabajará con una plataforma diferente (Odoo, ERPNext, Presta
 * **Configurar módulos básicos comunes** (productos, clientes, pedidos).
 * **Explorar y documentar procesos digitales clave**.
 * **Reflexionar sobre el impacto de estas plataformas en la digitalización empresarial y las Tecnologías Habilitadoras Digitales (THD).**
+
+
 
 ---
 
@@ -51,7 +61,7 @@ Aunque cada grupo trabajará con una plataforma diferente (Odoo, ERPNext, Presta
   * Descripción de los procesos digitalizados observados.
   * Relación con las THD vistas en el módulo.
   * Una **reflexión final** donde mostréis qué más se puede llegar a hacer con estos sistemas y cómo esto conecta con la digitalización de las empresas.
-  
+
 * **Presentación breve (5 min)** mostrando vuestra plataforma en funcionamiento y vuestras conclusiones.
 
 ---

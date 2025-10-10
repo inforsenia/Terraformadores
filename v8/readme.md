@@ -48,8 +48,8 @@ El mundo profesional exige hoy personas que sepan **ver más allá de lo inmedia
 
 ## Lista de tareas de Vision:
 ### Herramientas de gestión de proyectos
-1. [Practica 1:  Gestión de Incidencias con Trello](./Practica1/Practica1.md)
+1. [Práctica 1: Gestión de Incidencias con Trello](./Practica1/Practica1.md)
 
 
 ### Herramientas de gestión de proyectos
-1. [Despliegue y exploración de un ERP/E-commerce](./Practica2/Practica2.md)
+1. [Práctica2: Despliegue y exploración de un ERP/E-commerce](./Practica2/Practica2.md)
