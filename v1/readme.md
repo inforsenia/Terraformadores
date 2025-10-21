@@ -24,7 +24,7 @@ La entrega de todas las tareas las podréis realizar a través de *Aules* con un
 
 * [UP02-Tarea 4 - SSH](./UP02/Tarea4-SSH.md)
 
-* [UP03-Tarea1 - OpenVPN acceso remoto](./UP03/Tarea1-VPN-acceso-remoto.md)
+* [UP03-Tarea 1 - OpenVPN acceso remoto](./UP03/Tarea1-VPN-acceso-remoto.md)
 
 * [UP02-Tarea 5 - Certificados SSL](./UP02/Tarea5-CertificadosSSL.md)
 
