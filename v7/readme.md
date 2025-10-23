@@ -33,4 +33,9 @@ Doctor Strange nos recuerda que, igual que en la magia, en la programación el d
 2. [Prueba 1:  Conceptos básicos de Python](./Test1UD1/Prueba1UD1/Prueba1.md)
 
 ### UD2 - Programación modular
+<<<<<<< HEAD
 3. [Boletín Funciones Avanzado](./UD2/BoletinFuncionesAvanzado.md)
+=======
+3. [Boletín Repaso Funciones Avanzado](./UD2/Boletin%20Funciones%20Avanzado.md)
+
+>>>>>>> ae9ed6c (Añado nuevo boletin en programacion)
