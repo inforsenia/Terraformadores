@@ -28,9 +28,10 @@ Doctor Strange nos recuerda que, igual que en la magia, en la programación el d
 
 ---
 ## Lista de tareas de Dr. Strange:
-### Conceptos básicos
+### UD1 - Conceptos básicos
 1. [Repaso Examen:  Conceptos básicos de Python](./Test1UD1/RepasoExamen/RepasoExamen.md)
 2. [Prueba 1:  Conceptos básicos de Python](./Test1UD1/Prueba1UD1/Prueba1.md)
 
-
+### UD2 - Programación modular
+3. [Boletín Repaso Funciones Avanzado](./UD2/Boletin%20Funciones%20Avanzado.md)
 
