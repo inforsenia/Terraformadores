@@ -55,12 +55,9 @@ Con determinación y entusiasmo,
 ### LAMP
 1. [Tarea 1: Instalación y configuración LAMP](./UD2/Tarea1LAMP.md)
 
-<!--
-
-
 
 ### PHP
-1. [Tarea 1: Formulario Rendimiento Terraformadores](./PHP/NotaMedia/Tarea1.md)
-2. [Tarea 2: CRUD](./PHP/CRUD/TareaCRUD.md)
+<!-- 1. [Tarea 1: Formulario Rendimiento Terraformadores](./PHP/NotaMedia/Tarea1.md) -->
 
--->
+1. [Tarea: CRUD](./PHP/CRUD/TareaCRUD.md)
+
