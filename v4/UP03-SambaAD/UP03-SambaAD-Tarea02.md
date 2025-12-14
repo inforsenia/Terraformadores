@@ -31,7 +31,7 @@ Servicios en Red : [ Proyecto: Infraestructura Hosting para Terraformadores de V
 # Ajustes a la instalación, nuevos dominios.
 
 Pero para no entrar en conflicto con dominios que *no son nuestros*, lo que vamos a hacer es usar 
-el dominio propuesto *SIN* **freedns.com** y lo cambiaremos a **.internal**, que es como lo hace Ubuntu en la guía, pero además he estado investigando y la `ICANN incorporó ese dominio como *estándar* en el 2024, lo que nos permite aprender varias cosas nuevas a la vez ^_^.
+el dominio propuesto *SIN* **freedns.com** y lo cambiaremos a **.internal**, que es como lo hace Ubuntu en la guía, pero además he estado investigando y la `ICANN` incorporó ese dominio como *estándar* en el 2024, lo que nos permite aprender varias cosas nuevas a la vez ^_^.
 
 **MUY IMPORTANTE**: Leed toda la práctica antes de comenzar a configurar, ya que aparecen
 una serie de requisitos de funcionamiento que deben ser tenidos en cuenta desde el comienzo
