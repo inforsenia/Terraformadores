@@ -196,7 +196,7 @@ que se llame:
 * `/srv/externo/hospital-backups`
 
 Y accede desde la máquina que tiene la Base de Oracle de Hospital 
-para almacenar ahí backups de la BBDD.
+para almacenar ahí backups de la BBDD. :hospital:
 
 Para ello deberéis exportar la BBDD y guardarla en la carpeta montada.
 
