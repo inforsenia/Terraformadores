@@ -31,7 +31,7 @@ Servicios en Red : [ Proyecto: Infraestructura Hosting para Terraformadores de V
 # Ajustes a la instalación, nuevos dominios.
 
 Pero para no entrar en conflicto con dominios que *no son nuestros*, lo que vamos a hacer es usar 
-el dominio propuesto *SIN* **freedns.com** y lo cambiaremos a **.internal**, que es como lo hace Ubuntu en la guía, pero además he estado investigando y la ~ICANN~ incorporó ese dominio como *estándar* en el 2024, lo que nos permite aprender varias cosas nuevas a la vez ^_^.
+el dominio propuesto *SIN* **freedns.com** y lo cambiaremos a **.internal**, que es como lo hace Ubuntu en la guía, pero además he estado investigando y la `ICANN incorporó ese dominio como *estándar* en el 2024, lo que nos permite aprender varias cosas nuevas a la vez ^_^.
 
 **MUY IMPORTANTE**: Leed toda la práctica antes de comenzar a configurar, ya que aparecen
 una serie de requisitos de funcionamiento que deben ser tenidos en cuenta desde el comienzo
@@ -69,7 +69,7 @@ Dentro del dominio debéis crear los siguientes usuarios y grupos:
 Los Passwords debéis generarlos de manera segura y almacenarlos en un fichero 
 de `keepass` organizado por grupos y carpetas (esto os vendrá bien más adelante).
 
-Los usuarios `oficinap`,`inficiona` y `oficinat`, representan a los usuarios de
+Los usuarios `oficinap`,`oficinav` y `oficinat`, representan a los usuarios de
 las oficinas de Paiporta, Valencia y Torrent respectivamente.
 
 ---
@@ -195,7 +195,14 @@ que se llame:
 
 * `/srv/externo/hospital-backups`
 
-Y accede desde la máquina que tiene la Oracle para almacenar ahí backups de la Base de Datos de Hospital.
+Y accede desde la máquina que tiene la Base de Oracle de Hospital 
+para almacenar ahí backups de la BBDD.
+
+Para ello deberéis exportar la BBDD y guardarla en la carpeta montada.
+
+Tenéis esta documentación de RedHat para montar desde Windows:
+
+* [Mounting and Mapping](https://www.redhat.com/en/blog/samba-windows-linux)
 
 Documenta los pasos seguidos, te pueden hacer falta para el examen.
 
@@ -224,3 +231,4 @@ El resultado generado en la terminal ha de ser el mismo que en la ejecución del
 * [Beneficios del SSSD](https://docs.redhat.com/es/documentation/red_hat_enterprise_linux/8/html/configuring_authentication_and_authorization_in_rhel/understanding-sssd-and-its-benefits_configuring-authentication-and-authorization-in-rhel)
 * [Samba as Print Server](https://documentation.ubuntu.com/server/how-to/samba/print-server/)
 * [Samba as File Server](https://documentation.ubuntu.com/server/how-to/samba/file-server/)
+* [Mounting and Mapping](https://www.redhat.com/en/blog/samba-windows-linux)
