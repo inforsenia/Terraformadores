@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Objetivo de la práctica
+## Objetivo de la práctica
 
 El objetivo de esta práctica es que el alumnado diseñe e implemente un **servicio de red cliente-servidor en Python**, utilizando **sockets TCP** y un **protocolo de aplicación propio**, basado exclusivamente en el intercambio de mensajes **JSON**.
 
@@ -12,7 +12,7 @@ El sistema permitirá que un cliente envíe **una única vez información del us
 
 ---
 
-## 🧠 Competencias y conceptos trabajados
+## Competencias y conceptos trabajados
 
 * Programación cliente-servidor
 * Comunicación mediante sockets TCP
@@ -23,7 +23,7 @@ El sistema permitirá que un cliente envíe **una única vez información del us
 
 ---
 
-## 🛠️ Tecnologías y librerías permitidas
+## Tecnologías y librerías permitidas
 
 La práctica se desarrollará en **Python 3**, utilizando exclusivamente librerías de la biblioteca estándar:
 
@@ -35,11 +35,10 @@ La práctica se desarrollará en **Python 3**, utilizando exclusivamente librer�
 * `os` *(opcional)* → gestión de archivos
 * `threading` *(opcional)* → soporte para múltiples clientes
 
-⚠️ **No está permitido** el uso de frameworks, librerías externas ni bases de datos.
 
 ---
 
-## 📜 Descripción del servicio
+## Descripción del servicio
 
 El protocolo **SDMP/1.0** define un servicio de tipo *collector* donde:
 
@@ -50,9 +49,9 @@ Toda la comunicación se realiza mediante **mensajes JSON**, y todos los mensaje
 
 ---
 
-## 🔄 Flujo de comunicación del protocolo SDMP/1.0
+## Flujo de comunicación del protocolo SDMP/1.0
 
-### 1️⃣ Conexión y saludo
+### 1️. Conexión y saludo
 
 Una vez establecida la conexión TCP, el cliente enviará el siguiente mensaje:
 
@@ -75,7 +74,7 @@ El servidor responderá con:
 
 ---
 
-### 2️⃣ Envío de información del sistema
+### 2️. Envío de información del sistema
 
 Tras recibir la bienvenida, el cliente enviará **una única vez** los datos del uso de disco:
 
@@ -107,7 +106,7 @@ El servidor deberá:
 
 ---
 
-### 3️⃣ Cierre de la conexión
+### 3️. Cierre de la conexión
 
 Para finalizar la comunicación, el cliente enviará:
 
@@ -130,7 +129,7 @@ Ambas partes cerrarán la conexión de forma ordenada.
 
 ---
 
-## 🗄️ Almacenamiento de datos en el servidor
+## 4. Almacenamiento de datos en el servidor
 
 El servidor deberá guardar los datos recibidos en un fichero de texto llamado, por ejemplo:
 
@@ -138,7 +137,7 @@ El servidor deberá guardar los datos recibidos en un fichero de texto llamado, 
 sdmp_registro.log
 ```
 
-### 📄 Requisitos del fichero de registro
+### Requisitos del fichero de registro
 
 Cada línea del fichero deberá contener, como mínimo:
 
@@ -146,7 +145,6 @@ Cada línea del fichero deberá contener, como mínimo:
 * Dirección IP del cliente
 * Nombre del equipo
 * Sistema operativo
-* Punto de montaje
 * Porcentaje de uso del disco
 
 📌 El formato es libre, pero debe ser:
@@ -155,15 +153,15 @@ Cada línea del fichero deberá contener, como mínimo:
 * Consistente
 * Una línea por conexión
 
-### ✍️ Ejemplo de registro
+### Ejemplo de registro
 
 ```text
-2026-01-28 11:05:42 | 192.168.1.15 | aula-pc-07 | Linux | / | 71.2% usado
+2026-01-28 11:05:42 | 192.168.1.15 | aula-pc-07 | Linux | 71.2% usado
 ```
 
 ---
 
-## 📐 Reglas del protocolo
+## Reglas del protocolo
 
 * Todos los mensajes **DEBEN** ser JSON válido.
 * Todos los mensajes **DEBEN** incluir la clave `comando`.
@@ -177,9 +175,9 @@ Cada línea del fichero deberá contener, como mínimo:
 El programa servidor.py deberá ejecutarse automáticamente al arrancar el sistema, utilizando systemd. Nombre del servico sdmp.service
 
 
-## 📁 Entregables
+## Presentar
 
-El alumnado deberá entregar:
+El alumnado deberá presentar:
 
 1. `servidor.py` 
 2. `cliente.py`
@@ -193,7 +191,7 @@ El alumnado deberá entregar:
 
 ---
 
-## 🧪 Ampliaciones opcionales (subida de nota)
+## Ampliaciones (subida de nota)
 
 * Soporte para múltiples clientes simultáneos
 * Exportación del registro a formato CSV
