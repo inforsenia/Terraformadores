@@ -32,7 +32,7 @@ A continuación, se detallan las configuraciones requeridas:
 
 3. **Seguridad SSL:**
    - Configurar Apache con seguridad SSL para que sea capaz de resolver peticiones a **https://www.davidbowie.edu/**.
-   - El certificado SSL debe incluir en el **Common Name (CN)** el nombre **davidbowie.edu**.
+   - El certificado SSL debe incluir en el **Common Name (CN)** el nombre **davidbowie.edu** y o SAN.
 
 4. **Seguridad Digest:**
    - Configurar seguridad digest en el virtual host de **http://www.starman.edu/** para proteger el acceso al directorio **blackstar**.
